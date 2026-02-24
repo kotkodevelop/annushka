@@ -1,0 +1,221 @@
+/* ================= FONTS ================= */
+
+@font-face {
+  font-family: "TildaSans";
+  src: url("../fonts/TildaSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TildaSans";
+  src: url("../fonts/TildaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TildaSans";
+  src: url("../fonts/TildaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TildaSans";
+  src: url("../fonts/TildaSans-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TildaSans";
+  src: url("../fonts/TildaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TildaSans";
+  src: url("../fonts/TildaSans-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --container: 1200px;
+  --gutter: 16px;
+
+  --text: #252525;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --card: #f3f6fb;
+  --white: #fff;
+  --gray: #7e8283;
+
+
+  --blue: #78d4f7;
+  --blue-2: #65bfe1;
+
+  --r-12: 12px;
+  --r-16: 16px;
+  --r-24: 24px;
+
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+body {
+  font-family: "TildaSans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  color: var(--text);
+}
+main {
+  padding-top: 145px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+}
+a {
+  transition: .3s linear;
+}
+button {
+  transition: .3s linear;
+}
+
+
+.btn-def {
+  border-radius: 14px 14px 14px 14px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 16px;
+  position: relative;
+  z-index: 1;
+  height: fit-content;
+}
+.btn-def.rounded {
+  border-radius: 100px;
+}
+.btn-def.rounded::before {
+  transform: translate(0px, 5px);
+}
+.btn-def img,
+.btn-def span {
+  display: block;
+  z-index: 2;
+}
+.btn-def span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn-def::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #65bfe1;
+  transform: translate(0px, 5px);
+  z-index: -1;
+}
+.btn-def::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #78d4f7;
+  z-index: 1;
+}
+.btn-def.rounded::after {
+  background: linear-gradient(90deg, #8CD8F5 0%, #7AD5F8 100%);
+}
+.btn-def.gradi::after {
+  background: linear-gradient(90deg, #8CD8F5 0%, #7AD5F8 100%);
+}
+.btn-def img {
+  width: 24px;
+  height: 24px;
+}
+.btn-def:hover {
+  opacity: .8;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.section-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+.section-head-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 32px;
+}
+.section-head-2 h2 {
+  color: #252525;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.section-head-2 h2 span {
+  font-weight: 700;
+}
+.section-head-2 p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--gray);
+  margin: 0;
+}
+.section-head h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 62px;
+  margin: 0;
+}
+.section-head p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  color: var(--gray);
+  margin: 0;
+}
+.section {
+  padding-top: 32px;
+  margin-bottom: 44px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

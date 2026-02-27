@@ -3,17 +3,479 @@
 }
 
 @media (max-width: 1440px) {
-
+    .banner-dec-1 {
+        left: 4%;
+    }
+    .adv-dec-1 {
+        left: -14%;
+    }
+    .sale-dec-3 {
+        right: -130px;
+        top: 56%;
+    }
+    .faq-dec-2 {
+        right: -12%;
+    }
+    .howtoslider__prev {
+        left: -74px;
+    }
+    .howtoslider__next {
+        right: -74px;
+    }
 }
-
+@media (max-width: 1360px) {
+    .howtoslider__prev {
+        left: -20px;
+    }
+    .howtoslider__next {
+        right: -20px;
+    }
+    .sale-card {
+        padding-left: 44px;
+    }
+    .sale-slider__prev {
+        left: -24px;
+    }
+    .sale-slider__next {
+        right: -24px;
+    }
+    .banner-dec-1 {
+        right: 12%;
+        left: unset;
+    }
+    .team-wrap {
+    justify-content: center;
+    gap: 64px;
+}
+}
 @media (max-width: 1200px) {
-
+    .first__left {
+        padding-left: 24px;
+    }
+    .howto-dec-bg1 {
+        display: none;
+    }
+    .howto-dec-bg2 {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
-
+    .header__bottom {
+        display: none;
+    }
+    .header .header__socials {
+        display: none;
+    }
+    .header__top .bell {
+        display: none;
+    }
+    .header__top .header__phone img {
+        display: none;
+    }
+    .header__top .header__done {
+        display: none;
+    }
+    .header {
+        height: 80px;
+    }
+    .brand__logo {
+        height: 45px;
+    }
+    .header__phone {
+        font-size: 15px;
+    }
+    .first__right {
+        display: none;
+    }
+    .first__left {
+        width: 100%;
+        padding: 32px;
+        padding-bottom: 44px;
+        justify-content: center;
+    }
+    main {
+        padding-top: 80px;
+    }
+    .banner-dec-1 {
+        display: none;
+    }
+    .banner-dec-2 {
+        display: none;
+    }
+    .header__top {
+        justify-content: center;
+    }
+    .first__title {
+        font-size: 39px;
+        line-height: 39px;
+    }
+    .first__sub {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .calc__grid {
+        gap: 16px;
+    }
+    .banner_select__thumb_inner {
+        gap: 4px;
+    }
+    .banner_select__thumb {
+        width: 53px;
+        height: 44px;
+    }
+    .features__item {
+        padding: 0 32px;
+        padding-left: 8px;
+    }
+    .custom-select__trigger {
+        padding: 0 16px;
+    }
+    .custom-select {
+        font-size: 18px;
+    }
+    .section-head h2 {
+        font-size: 33px;
+        line-height: 51px;
+    }
+    .section-head p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .section-head {
+        margin-bottom: 20px;
+    }
+    .adv-dec-1 {
+        display: none;
+    }
+    .adv-dec-2 {
+        display: none;
+    }
+    .advantages-items {
+        overflow-x: auto;
+        width: 110%;
+        position: relative;
+        padding-bottom: 16px;
+    }
+    .section-head {
+        text-align: center;
+    }
+    .advantages-items::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .advantages-items .card {
+        width: 215px;
+        flex: unset;
+        min-width: 215px;
+    }
+    .advantages-num {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+        min-width: 38px;
+    }
+    .howto__tabs {
+        display: none;
+    }
+    .howto-dec-1,
+    .howto-dec-2,
+    .howto-bg-dec,
+    .howto-bg-dec-2 {
+        display: none;
+    }
+    .howto__cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .howto__cardtext {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .howto__cardlink {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .howto__card {
+        padding: 16px 20px;
+    }
+    .howtoslider__hotspot {
+        position: relative;
+        transform: none;
+        top: unset;
+        left: unset;
+        bottom: unset;
+        right: unset;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 16px;
+        padding: 0 20px;
+    }
+    .howtoslider__img {
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .howtoslider__bubble {
+        position: relative;
+        top: unset !important;
+        left: unset !important;
+        bottom: unset !important;
+        right: unset !important;
+        background: none;
+        width: unset;
+        max-width: unset;
+        padding: 0;
+        backdrop-filter: none;
+        box-shadow: unset;
+        transform: none !important;
+        font-size: 15px;
+        text-align: unset;
+    }
+    .howtoslider__dot {
+        min-width: 18px;
+        height: 18px;
+    }
+    .howtoslider__bubble::after {
+        display: none;
+    }
+    .howtoslider__prev, .howtoslider__next {
+        width: 40px;
+        height: 40px;
+        top: 100px;
+    }
+    .howtoslider__prev {
+        left: 20px;
+    }
+    .howtoslider__next {
+        right: 20px;
+    }
+    .howtoslider {
+        margin-top: 0;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+   .pricing-items {
+        overflow-x: auto;
+        width: 110%;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 16px;
+    }
+    .pricing-items::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .pricing-item {
+        width: 270px;
+        flex: unset;
+        min-width: 270px;
+    }
+    .order__inner {
+        flex-direction: column;
+    }
+    .order__title {
+        font-size: 33px;
+        line-height: 36px;
+    }
+    .section-head-2 h2 {
+        font-size: 33px;
+    }
+    .etaps-items {
+        overflow-x: auto;
+        width: 110%;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 16px;
+    }
+    .etaps-items::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .etap-item {
+        min-width: 250px;
+    }
+    .order__card {
+        width: 100%;
+        max-width: unset;
+    }
+    .etaps-button-wrapper {
+        margin-top: 20px;
+    }
+    .reviews .section-head-2 {
+        text-align: center;
+    }
+    .rev-dec-2 {
+        display: none;
+    }
+    .rev-dec-3 {
+        display: none;
+    }
+    .rev-dec-1 {
+        display: none;
+    }
+    .reviews-items {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 110%;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 16px;
+    }
+    .reviews-items::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .review-item {
+        width: 300px;
+        min-width: 300px;
+    }
+    .review-item-text {
+        font-size: 16px;
+    }
+    .review-item-text {
+        padding: 32px 20px;
+    }
+    .section-head-2 p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .reviews-lower {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .connect-bg {
+        display: none;
+    }
+    .connect-dec-1 {
+        display: none;
+    }
+    .connect-form {
+        flex-direction: column;
+    }
+    .connect-form button {
+        width: 100%;
+    }
+    .connect-form {
+        width: 100%;
+    }
+    .connect-form-in-wrap input {
+        width: 100%;
+    }
+    .connect-form-in-wrap {
+        width: 100%;
+    }
+    .connect .section-head-2 h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .phonebox-img-phone {
+        height: 360px;
+    }
+    .phonebox-wrap {
+        padding: 32px;
+        overflow: hidden;
+    }
+    .phonebox-content {
+        text-align: center;
+    }
+    .phonebox-dec-1, .phonebox-dec-2 {
+        display: none;
+    }
+    .phonebox-wrap h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .phonebox-wrap {
+        padding: 64px 32px;
+        align-items: flex-start;
+    }
+    .phonebox-wrap p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .phonebox-wrap {
+        padding-bottom: 400px;
+    }
+    .phonebox-elipse-big {
+        width: 90%;
+    }
+    .phonebox-img-phone {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .phonebox-elipse-sm {
+        right: unset;
+        left: 64px;
+    }
+    .phonebox-elipse-big {
+        bottom: -34px;
+    }
+    .sale .section-head-2 {
+        text-align: center;
+        max-width: 340px;
+        margin: 0 auto 20px;
+    }
+    .sale-dec-1 {
+        display: none;
+    }
+    .sale-dec-2 {
+        display: none;
+    }
+    .phonebox-actions {
+        margin: 0 auto;
+    }
+    .sale-slider__swiper .swiper-wrapper {
+        gap: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 110%;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 16px;
+    }
+    .sale-slider__swiper .swiper-slide{
+        width: 285px;
+    }
+    .sale-slider__swiper .swiper-wrapper::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .sale-slider__swiper {
+        overflow: unset;
+    }
+    .sale-btn-wrap {
+        margin-top: 0;
+    }
+    .sale-card-btn span{
+        font-size: 17px;
+    }
+    .sale-card {
+        padding: 32px 20px;
+    }
+    .sale-card__title {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .sale-card__media {
+        width: 80%;
+    }
+    .sale-card--green .sale-card__media {
+        width: 120%;
+    }
 }
 
 @media (max-width: 768px) {
-
+    
 }

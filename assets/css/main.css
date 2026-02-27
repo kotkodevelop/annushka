@@ -1411,6 +1411,9 @@
   margin-top: 1px;
   position: relative;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .order__check:checked + .order__check-ui {

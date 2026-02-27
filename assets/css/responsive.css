@@ -90,7 +90,8 @@
     }
     .first__left {
         width: 100%;
-        padding: 32px;
+        padding: 0px;
+        padding-top: 32px;
         padding-bottom: 44px;
         justify-content: center;
     }
@@ -743,7 +744,7 @@
         transform: translateX(-50%);
         flex-direction: row;
         width: fit-content;
-        bottom: 50px;
+        bottom: 30px;
     }
     .footer {
         padding-bottom: 120px;

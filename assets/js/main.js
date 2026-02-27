@@ -274,3 +274,111 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         
     });
 });
+
+// Mob menu
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.header-burger');
+  const closeBtn = document.querySelector('.header__closeBar');
+  const mobMenu = document.querySelector('.mob-menu');
+  const pageFilter = document.querySelector('.page-filter');
+
+  if (!burger || !closeBtn || !mobMenu || !pageFilter) return;
+
+  function openMenu() {
+    mobMenu.classList.add('active');
+    pageFilter.classList.add('active');
+  }
+
+  function closeMenu() {
+    mobMenu.classList.remove('active');
+    pageFilter.classList.remove('active');
+  }
+
+  burger.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  pageFilter.addEventListener('click', closeMenu);
+});
+
+
+//
+document.addEventListener('DOMContentLoaded', () => {
+  const openers = document.querySelectorAll('[data-modal-open]');
+  let activeModal = null;
+
+  function openModal(modal) {
+    if (!modal) return;
+
+    // закрыть текущую, если есть
+    if (activeModal && activeModal !== modal) closeModal(activeModal);
+
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+
+    activeModal = modal;
+  }
+
+  function closeModal(modal) {
+    if (!modal) return;
+
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+
+    if (activeModal === modal) activeModal = null;
+  }
+
+  // Открытие по клику на любой элемент с data-modal-open="id"
+  openers.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      // если это ссылка — чтобы не прыгала
+      if (btn.tagName.toLowerCase() === 'a') e.preventDefault();
+
+      const id = btn.getAttribute('data-modal-open');
+      const modal = document.getElementById(id);
+      openModal(modal);
+    });
+  });
+
+  // Закрытие по клику на [data-modal-close] внутри модалки
+  document.addEventListener('click', (e) => {
+    const closeEl = e.target.closest('[data-modal-close]');
+    if (!closeEl) return;
+
+    const modal = closeEl.closest('.modal');
+    closeModal(modal);
+  });
+
+  // Закрытие по Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && activeModal) {
+      closeModal(activeModal);
+    }
+  });
+});
+
+
+
+// service__table toggle
+(() => {
+  const root = document.getElementById('serviceTable');
+  const btn = document.getElementById('serviceTableBtn');
+  const scroller = document.getElementById('serviceTableScroll');
+  const fade = root.querySelector('.service__table__fade');
+
+  if (!root || !btn || !scroller) return;
+
+  // если контента меньше 600px — кнопку и фейд скрываем
+  const syncControls = () => {
+    const needsClamp = scroller.scrollHeight > 600;
+    btn.style.display = needsClamp ? '' : 'none';
+    fade.style.display = needsClamp ? '' : 'none';
+  };
+
+  btn.addEventListener('click', () => {
+    root.classList.add('is-open');
+  });
+
+  syncControls();
+  window.addEventListener('resize', syncControls);
+})();

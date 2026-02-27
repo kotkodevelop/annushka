@@ -62,7 +62,7 @@
 
       <div class="container header__bottom">
         <nav class="nav" aria-label="Главное меню">
-          <a class="nav__link" href="#">Уборка</a>
+          <a class="nav__link active" href="#">Уборка</a>
           <a class="nav__link" href="#">Окна</a>
           <a class="nav__link" href="#">Химчистка</a>
           <a class="nav__link" href="#">Юрлицам</a>
@@ -340,6 +340,321 @@
         </div>
       </section>
 
+      <!-- PRICING -->
+      <section class="pricing section">
+        <style>
+          .pricing-item__list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 25px;
+            background: url("/assets/img/stars-icon.svg") no-repeat center;
+            background-size: contain;
+          }
+        </style>
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2 center">Цены на наши услуги</h2>
+            <p class="sub center">Справимся с любой задачей</p>
+          </div>
+
+          <div class="pricing-items">
+
+            <div class="pricing-item pricing-item--light">
+              <div class="pricing-item__head">Уборка квартир</div>
+
+              <div class="pricing-item__body">
+                <ul class="pricing-item__list">
+                  <li>1-2 клинера</li>
+                  <li>Удаление легких загрязнений</li>
+                  <li>На высоту до 1,8 метра</li>
+                  <li>Время уборки 2-4 часа</li>
+                </ul>
+
+                <div class="pricing-item__price">
+                  от 2499 ₽
+                </div>
+
+                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
+              </div>
+            </div>
+
+            <div class="pricing-item pricing-item--dark">
+              <div class="pricing-item__head">Уборка домов</div>
+
+              <div class="pricing-item__body">
+                <ul class="pricing-item__list">
+                  <li>1-2 клинера</li>
+                  <li>Удаление легких загрязнений</li>
+                  <li>На высоту до 1,8 метра</li>
+                  <li>Время уборки 2-4 часа</li>
+                </ul>
+
+                <div class="pricing-item__price">
+                  от 2499 ₽
+                </div>
+
+                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
+              </div>
+            </div>
+
+            <div class="pricing-item pricing-item--light">
+              <div class="pricing-item__head">Мытье окон</div>
+
+              <div class="pricing-item__body">
+                <ul class="pricing-item__list">
+                  <li>1-2 клинера</li>
+                  <li>Удаление легких загрязнений</li>
+                  <li>На высоту до 1,8 метра</li>
+                  <li>Время уборки 2-4 часа</li>
+                </ul>
+
+                <div class="pricing-item__price">
+                  от 2499 ₽
+                </div>
+
+                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
+              </div>
+            </div>
+
+            <div class="pricing-item pricing-item--dark">
+              <div class="pricing-item__head">Уборка офисов</div>
+
+              <div class="pricing-item__body">
+                <ul class="pricing-item__list">
+                  <li>1-2 клинера</li>
+                  <li>Удаление легких загрязнений</li>
+                  <li>На высоту до 1,8 метра</li>
+                  <li>Время уборки 2-4 часа</li>
+                </ul>
+
+                <div class="pricing-item__price">
+                  от 2499 ₽
+                </div>
+
+                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
+              </div>
+            </div>
+
+          </div>
+         
+        </div>
+      </section>
+
+      <!--Table-->
+      <section class="service__table section">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="h2 center">Эти опции войдут в уборку</h2>
+            </div>
+            <div class="service__table" id="serviceTable">
+            <div class="service__table__wrap">
+                <div class="service__table__scroll" id="serviceTableScroll">
+                <table class="service__table__grid" role="table" aria-label="Таблица услуг">
+                    <thead class="service__table__head">
+                    <tr class="service__table__tr">
+                        <th class="service__table__th service__table__th--left">ЧТО ВХОДИТ</th>
+                        <th class="service__table__th">ПОДДЕРЖИВАЮЩАЯ</th>
+                        <th class="service__table__th">ГЕНЕРАЛЬНАЯ</th>
+                        <th class="service__table__th">ПОСЛЕ РЕМОНТА</th>
+                        <th class="service__table__th">ЦАРЬ УБОРКА</th>
+                    </tr>
+                    </thead>
+
+                    <tbody class="service__table__body">
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left"><span>Минимальный заказ</span></td>
+                        <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                        <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                        <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                        <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Мойка холодильника снаружи</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Духового шкафа снаружи</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Очистка кухонных рабочих поверхностей</td>
+                        <td class="service__table__td service__table__td--center">79 руб.</td>
+                        <td class="service__table__td service__table__td--center">119 руб.</td>
+                        <td class="service__table__td service__table__td--center">119 руб.</td>
+                        <td class="service__table__td service__table__td--center">119 руб.</td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Мойка стеновых панелей «фартука»</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление пыли с кухонной техники</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Мойка фасадов кухонного гарнитура</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">ДУХОВОЙ ШКАФ внутри снаружи</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">ХОЛОДИЛЬНИК внутри снаружи</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left"><span class="blue">КОМНАТА:</span></td>
+                        <td class="service__table__td service__table__td--center"></td>
+                        <td class="service__table__td service__table__td--center"></td>
+                        <td class="service__table__td service__table__td--center"></td>
+                        <td class="service__table__td service__table__td--center"></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    <tr class="service__table__tr">
+                        <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                        <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="service__table__fade" aria-hidden="true"></div>
+
+                <button class="btn-def service__table-btn" type="button" id="serviceTableBtn">
+                    <span>Смотреть еще</span>
+                </button>
+            </div>
+            </div>
+        </div>
+      </section>
+
       <!-- HowTo -->
       <section class="howto section">
 
@@ -582,110 +897,6 @@
 
           </div>
 
-        </div>
-      </section>
-
-      <!-- PRICING -->
-      <section class="pricing section">
-        <style>
-          .pricing-item__list li::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 26px;
-            height: 25px;
-            background: url("/assets/img/stars-icon.svg") no-repeat center;
-            background-size: contain;
-          }
-        </style>
-        <div class="container">
-          <div class="section-head">
-            <h2 class="h2 center">Цены на наши услуги</h2>
-            <p class="sub center">Справимся с любой задачей</p>
-          </div>
-
-          <div class="pricing-items">
-
-            <div class="pricing-item pricing-item--light">
-              <div class="pricing-item__head">Уборка квартир</div>
-
-              <div class="pricing-item__body">
-                <ul class="pricing-item__list">
-                  <li>1-2 клинера</li>
-                  <li>Удаление легких загрязнений</li>
-                  <li>На высоту до 1,8 метра</li>
-                  <li>Время уборки 2-4 часа</li>
-                </ul>
-
-                <div class="pricing-item__price">
-                  от 2499 ₽
-                </div>
-
-                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
-              </div>
-            </div>
-
-            <div class="pricing-item pricing-item--dark">
-              <div class="pricing-item__head">Уборка домов</div>
-
-              <div class="pricing-item__body">
-                <ul class="pricing-item__list">
-                  <li>1-2 клинера</li>
-                  <li>Удаление легких загрязнений</li>
-                  <li>На высоту до 1,8 метра</li>
-                  <li>Время уборки 2-4 часа</li>
-                </ul>
-
-                <div class="pricing-item__price">
-                  от 2499 ₽
-                </div>
-
-                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
-              </div>
-            </div>
-
-            <div class="pricing-item pricing-item--light">
-              <div class="pricing-item__head">Мытье окон</div>
-
-              <div class="pricing-item__body">
-                <ul class="pricing-item__list">
-                  <li>1-2 клинера</li>
-                  <li>Удаление легких загрязнений</li>
-                  <li>На высоту до 1,8 метра</li>
-                  <li>Время уборки 2-4 часа</li>
-                </ul>
-
-                <div class="pricing-item__price">
-                  от 2499 ₽
-                </div>
-
-                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
-              </div>
-            </div>
-
-            <div class="pricing-item pricing-item--dark">
-              <div class="pricing-item__head">Уборка офисов</div>
-
-              <div class="pricing-item__body">
-                <ul class="pricing-item__list">
-                  <li>1-2 клинера</li>
-                  <li>Удаление легких загрязнений</li>
-                  <li>На высоту до 1,8 метра</li>
-                  <li>Время уборки 2-4 часа</li>
-                </ul>
-
-                <div class="pricing-item__price">
-                  от 2499 ₽
-                </div>
-
-                <a href="#" class="btn-def pricing-item__btn"><span>Подробнее</span></a>
-              </div>
-            </div>
-
-          </div>
-         
         </div>
       </section>
 
@@ -1194,6 +1405,180 @@
         </div>
       </section>
 
+      <!--Hub-->
+      <section class="hub section">
+        <div class="container">
+            <div class="section-head-2">
+                <h2 class="h2 center"><span>Оказываем весь спектр услуг</span> <br> по уборке квартир</h2>
+            </div>
+            <div class="hub-items-wrap">
+                <img src="assets/img/hub-dec-1.svg" alt="hub-dec" class="hub-dec-1">
+                <img src="assets/img/hub-dec-2.svg" alt="hub-dec" class="hub-dec-2">
+                <img src="assets/img/hub-dec-3.svg" alt="hub-dec" class="hub-dec-3">
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Генеральная уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка после ремонта</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Поддерживающая уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Срочная уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка после пожара</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка после потопа</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Комплексная уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Три раза в неделю</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Однокомнатной квартиры</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Эко уборка квартиры</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Генеральная уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка после ремонта</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Поддерживающая уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Срочная уборка</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка после пожара</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Дезинфекция</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка квартир</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Три раза в неделю</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Двухкомнатной квартиры</span>
+                    <a href="#"></a>
+                </div>
+
+                <div class="hub-item">
+                    <div class="hub-dot">
+                        <div class="hub-dot-in"></div>
+                    </div>
+                    <span>Уборка элитных квартир</span>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+      </section>
+
       <!-- Team -->
       <section class="team section">
         <div class="container">
@@ -1394,9 +1779,6 @@
   
       </section>
 
-      
-
-      
     </main>
 
     <!-- FOOTER -->

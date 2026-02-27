@@ -92,7 +92,9 @@ a {
 button {
   transition: .3s linear;
 }
-
+.center {
+  text-align: center;
+}
 
 .btn-def {
   border-radius: 14px 14px 14px 14px;

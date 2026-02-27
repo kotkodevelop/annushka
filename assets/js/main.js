@@ -362,17 +362,20 @@ document.addEventListener('DOMContentLoaded', () => {
 // service__table toggle
 (() => {
   const root = document.getElementById('serviceTable');
+  if (!root) return;
+
   const btn = document.getElementById('serviceTableBtn');
   const scroller = document.getElementById('serviceTableScroll');
   const fade = root.querySelector('.service__table__fade');
 
-  if (!root || !btn || !scroller) return;
+  if (!btn || !scroller) return;
 
-  // если контента меньше 600px — кнопку и фейд скрываем
   const syncControls = () => {
     const needsClamp = scroller.scrollHeight > 600;
+
     btn.style.display = needsClamp ? '' : 'none';
-    fade.style.display = needsClamp ? '' : 'none';
+
+    if (fade) fade.style.display = needsClamp ? '' : 'none';
   };
 
   btn.addEventListener('click', () => {

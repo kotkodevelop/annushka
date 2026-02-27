@@ -160,123 +160,132 @@
       <div class="page-filter"></div>
 
       <!-- FIRST SCREEN -->
-      <div class="first__split">
-          <!-- LEFT --> 
-          <section class="first__left">
-            <img src="assets/img/banner-dec-1.svg" alt="dec" class="banner-dec-1">
-            <img src="assets/img/banner-dec-2.svg" alt="dec" class="banner-dec-2">
-            <div class="first__left-inner">
-              <h1 class="first__title">Клининговая компания</h1>
-              <p class="first__sub">
-                Рассчитайте примерную стоимость уборки<br />
-                и получите <a class="first__link" href="#">10% скидку на первый заказ</a>
-              </p>
-
-              <div class="calc">
-                <div class="calc__row">
-                  <div class="calc__label">Площадь квартиры <span id="m2Val">174 м²</span></div>
-                </div>
-
-                <div
-                  class="banner_select banner_select__slider"
-                  id="m2Slider"
-                  data-min="30"
-                  data-max="500"
-                  data-value="174"
-                >
-                  <div class="banner_select__track">
-                    <div class="banner_select__fill" aria-hidden="true"></div>
-                    <button type="button" class="banner_select__thumb" aria-label="Изменить площадь">
-                      <span class="banner_select__thumb_inner" aria-hidden="true">
-                        <span class="banner_select__thumb_icon banner_select__thumb_icon--left">
-                          <img src="assets/img/mini-arrow-left.svg" alt="arrow">
-                        </span>
-                        <span class="banner_select__thumb_icon banner_select__thumb_icon--right">
-                          <img src="assets/img/mini-arrow-left.svg" alt="arrow">
-                        </span>
-                      </span>
-                    </button>
-                  </div>
-
-                  <div class="banner_select__minmax">
-                    <span class="banner_select__min">30 м²</span>
-                    <span class="banner_select__max">500 м²</span>
-                  </div>
-                </div>
-
-                <label class="field">
-                  <span class="field__label">Тип уборки</span>
-                  <div class="custom-select" data-select>
-                    <select class="custom-select__native">
-                      <option value="support">Поддерживающая</option>
-                      <option value="general">Генеральная</option>
-                      <option value="after">После ремонта</option>
-                    </select>
-
-                    <div class="custom-select__trigger">
-                      <span class="custom-select__value"></span>
-                      <div class="arrow">
-                        <img src="assets/img/select-arrow.webp" alt="arrow">
-                      </div>
-                    </div>
-
-                    <div class="custom-options"></div>
-                  </div>
-                </label>
-
-                <div class="calc__grid">
-                  <label class="field">
-                    <span class="field__label">Выбрать день</span>
-                    <div class="custom-select" data-select>
-                      <select class="custom-select__native">
-                        <option value="today">Сегодня</option>
-                        <option value="tomorrow">Завтра</option>
-                        <option value="2days">Через 2 дня</option>
-                      </select>
-
-                      <div class="custom-select__trigger">
-                        <span class="custom-select__value"></span>
-                        <div class="arrow">
-                          <img src="assets/img/select-arrow.webp" alt="arrow">
+      <section class="bannerscreen">
+            <div class="container">
+                    <div class="first__split">
+                    <!-- LEFT --> 
+                    <section class="first__left">
+                        <img src="assets/img/banner-dec-1.svg" alt="dec" class="banner-dec-1">
+                        <img src="assets/img/banner-dec-2.svg" alt="dec" class="banner-dec-2">
+                        <div class="first__left-inner">
+                        <div class="breadcrumbs banner-breadcrumbs">
+                          <li class="link"><a href="index.html">Главная</a></li>
+                          <div class="breadcrums-devider">></div>
+                          <li class="current">Уборка квартир</li>
                         </div>
-                      </div>
+                        <h1 class="first__title">Клининговая компания</h1>
+                        <p class="first__sub">
+                            Рассчитайте примерную стоимость уборки<br />
+                            и получите <a class="first__link" href="#">10% скидку на первый заказ</a>
+                        </p>
 
-                      <div class="custom-options"></div>
+                        <div class="calc">
+                            <div class="calc__row">
+                            <div class="calc__label">Площадь квартиры <span id="m2Val">174 м²</span></div>
+                            </div>
+
+                            <div
+                            class="banner_select banner_select__slider"
+                            id="m2Slider"
+                            data-min="30"
+                            data-max="500"
+                            data-value="174"
+                            >
+                            <div class="banner_select__track">
+                                <div class="banner_select__fill" aria-hidden="true"></div>
+                                <button type="button" class="banner_select__thumb" aria-label="Изменить площадь">
+                                <span class="banner_select__thumb_inner" aria-hidden="true">
+                                    <span class="banner_select__thumb_icon banner_select__thumb_icon--left">
+                                    <img src="assets/img/mini-arrow-left.svg" alt="arrow">
+                                    </span>
+                                    <span class="banner_select__thumb_icon banner_select__thumb_icon--right">
+                                    <img src="assets/img/mini-arrow-left.svg" alt="arrow">
+                                    </span>
+                                </span>
+                                </button>
+                            </div>
+
+                            <div class="banner_select__minmax">
+                                <span class="banner_select__min">30 м²</span>
+                                <span class="banner_select__max">500 м²</span>
+                            </div>
+                            </div>
+
+                            <label class="field">
+                            <span class="field__label">Тип уборки</span>
+                            <div class="custom-select" data-select>
+                                <select class="custom-select__native">
+                                <option value="support">Поддерживающая</option>
+                                <option value="general">Генеральная</option>
+                                <option value="after">После ремонта</option>
+                                </select>
+
+                                <div class="custom-select__trigger">
+                                <span class="custom-select__value"></span>
+                                <div class="arrow">
+                                    <img src="assets/img/select-arrow.webp" alt="arrow">
+                                </div>
+                                </div>
+
+                                <div class="custom-options"></div>
+                            </div>
+                            </label>
+
+                            <div class="calc__grid">
+                            <label class="field">
+                                <span class="field__label">Выбрать день</span>
+                                <div class="custom-select" data-select>
+                                <select class="custom-select__native">
+                                    <option value="today">Сегодня</option>
+                                    <option value="tomorrow">Завтра</option>
+                                    <option value="2days">Через 2 дня</option>
+                                </select>
+
+                                <div class="custom-select__trigger">
+                                    <span class="custom-select__value"></span>
+                                    <div class="arrow">
+                                    <img src="assets/img/select-arrow.webp" alt="arrow">
+                                    </div>
+                                </div>
+
+                                <div class="custom-options"></div>
+                                </div>
+                            </label>
+
+                            <div class="badge">
+                                <div class="badge__top">
+                                <img src="assets/img/fire.webp" alt="fire" class="badge__fire"> 
+                                <span>Осталось сегодня</span>
+                                </div>
+                                <div class="badge__bottom">5 клинеров</div>
+                            </div>
+                            </div>
+
+                            <div class="calc__total">
+                            <div class="calc__total-left">Итого:</div>
+                            <div class="calc__total-right">от 1 890 ₽</div>
+                            </div>
+
+                            <button class="btn-def banner-btn" type="button" data-modal-open="contact-modal">
+                            <img class="btn__ic" src="assets/img/cart.webp" alt="cart" />
+                            <span>Заказать</span>
+                            </button>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!-- RIGHT -->
+                    <section class="first__right" aria-label="Фото">
+                        <div class="hero-img" style="background: url('assets/img/banner-bg.webp') center/cover no-repeat;">
+                        <!-- stamp -->
+                        <div class="stamp">
+                            <img src="assets/img/banner-sale.svg" alt="sale">
+                        </div>
+                        </div>
+                    </section>
                     </div>
-                  </label>
-
-                  <div class="badge">
-                    <div class="badge__top">
-                      <img src="assets/img/fire.webp" alt="fire" class="badge__fire"> 
-                      <span>Осталось сегодня</span>
-                    </div>
-                    <div class="badge__bottom">5 клинеров</div>
-                  </div>
-                </div>
-
-                <div class="calc__total">
-                  <div class="calc__total-left">Итого:</div>
-                  <div class="calc__total-right">от 1 890 ₽</div>
-                </div>
-
-                <button class="btn-def banner-btn" type="button" data-modal-open="contact-modal">
-                  <img class="btn__ic" src="assets/img/cart.webp" alt="cart" />
-                  <span>Заказать</span>
-                </button>
-              </div>
             </div>
-          </section>
-
-          <!-- RIGHT -->
-          <section class="first__right" aria-label="Фото">
-            <div class="hero-img" style="background: url('assets/img/banner-bg.webp') center/cover no-repeat;">
-              <!-- stamp -->
-              <div class="stamp">
-                <img src="assets/img/banner-sale.svg" alt="sale">
-              </div>
-            </div>
-          </section>
-      </div>
+      </section>
 
       <!-- bottom features bar -->
       <div class="features">

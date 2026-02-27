@@ -783,6 +783,9 @@
     .bannerscreen {
         padding-top: 32px;
     }
+    .reviews-ya-img img {
+        max-width: 190px;
+    }
 }
 
 @media (max-width: 768px) {

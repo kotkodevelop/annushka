@@ -1300,6 +1300,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-top: 10px;
+  position: relative;
+  z-index: 5;
 }
 
 .howto__card {

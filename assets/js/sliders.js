@@ -139,3 +139,90 @@ document.addEventListener("DOMContentLoaded", () => {
   // listen changes
   mediaQuery.addEventListener("change", handleBreakpoint);
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sliderEl = document.querySelector(".js-celebs-slider");
+  if (!sliderEl) return;
+
+  const prevBtn = document.querySelector(".celebs-slider__prev");
+  const nextBtn = document.querySelector(".celebs-slider__next");
+
+  let slider = null;
+
+  const mediaQuery = window.matchMedia("(min-width: 992px)");
+
+  function initSwiper() {
+    slider = new Swiper(sliderEl, {
+      loop: true,
+      speed: 600,
+      spaceBetween: 16,
+      slidesPerView: 4,
+      autoHeight: false,
+
+      navigation: {
+        nextEl: ".celebs-slider__next",
+        prevEl: ".celebs-slider__prev",
+      },
+
+      on: {
+        init: (sw) => toggleSaleNav(sw),
+        resize: (sw) => toggleSaleNav(sw),
+        slidesLengthChange: (sw) => toggleSaleNav(sw),
+        snapGridLengthChange: (sw) => toggleSaleNav(sw),
+      },
+    });
+  }
+
+  function destroySwiper() {
+    if (slider) {
+      slider.destroy(true, true);
+      slider = null;
+    }
+
+    if (prevBtn) prevBtn.style.display = "none";
+    if (nextBtn) nextBtn.style.display = "none";
+  }
+
+  function getCurrentSlidesPerView(sw) {
+    const spv = sw.params.slidesPerView;
+
+    if (spv === "auto") {
+      const slideW = sw.slides?.[0]?.getBoundingClientRect().width || 1;
+      return Math.max(1, Math.floor(sw.width / slideW));
+    }
+
+    return Number(spv) || 1;
+  }
+
+  function toggleSaleNav(sw) {
+    const total = sw.slides.length;
+    const spv = getCurrentSlidesPerView(sw);
+
+    const canScroll = total > spv;
+
+    if (prevBtn) prevBtn.style.display = canScroll ? "" : "none";
+    if (nextBtn) nextBtn.style.display = canScroll ? "" : "none";
+
+    if (sw.navigation) {
+      if (canScroll) sw.navigation.enable();
+      else sw.navigation.disable();
+    }
+  }
+
+  function handleBreakpoint(e) {
+    if (e.matches) {
+      // >= 992px
+      if (!slider) initSwiper();
+    } else {
+      // < 992px
+      destroySwiper();
+    }
+  }
+
+  // initial check
+  handleBreakpoint(mediaQuery);
+
+  // listen changes
+  mediaQuery.addEventListener("change", handleBreakpoint);
+});

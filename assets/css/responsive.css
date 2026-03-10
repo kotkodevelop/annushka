@@ -756,6 +756,10 @@
         width: fit-content;
         bottom: 30px;
     }
+    .fixed-phone {
+        bottom: 30px;
+        right: 16px;
+    }
     .footer {
         padding-bottom: 120px;
     }
@@ -1019,6 +1023,24 @@
     }
     .calc-page-bar-text-title {
         font-size: 20px;
+    }
+
+    .imgs__row {
+        overflow-x: auto;
+        display: flex;
+        width: 110%;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 16px;
+    }
+    .imgs__row::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .celebs h2 {
+        margin-bottom: 16px;
+        line-height: 35px;
     }
 }
 

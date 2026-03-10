@@ -3,9 +3,7 @@
 }
 
 @media (max-width: 1440px) {
-    .banner-dec-1 {
-        left: 4%;
-    }
+
     .adv-dec-1 {
         left: -14%;
     }
@@ -41,6 +39,7 @@
     }
     .banner-dec-1 {
         right: 12%;
+        top: 21%;
         left: unset;
     }
     .team-wrap {
@@ -57,6 +56,15 @@
     }
     .howto-dec-bg2 {
         display: none;
+    }
+    .sale-page-items-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sale-page-items-wrap .sale-card {
+        min-width: 320px;
+        max-width: 380px;
     }
 }
 
@@ -410,6 +418,7 @@
     }
     .phonebox-elipse-big {
         width: 90%;
+        max-width: 600px;
     }
     .phonebox-img-phone {
         left: 50%;
@@ -617,9 +626,10 @@
         line-height: 33px;
     }
     .accordion-item-header {
-        padding: 24px 20px;
+        padding: 24px 16px;
         gap: 20px;
-        line-height: 18px;
+        line-height: 17px;
+        font-size: 16px;
     }
     .footer-top-cols {
         flex-wrap: wrap;
@@ -781,14 +791,241 @@
         padding: 13px 10px;
         gap: 8px;
     }
-    .bannerscreen {
-        padding-top: 32px;
-    }
+
     .reviews-ya-img img {
         max-width: 190px;
+    }
+    .phonebox-wrap {
+        justify-content: center;
+    }
+    .header__top {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100%;
+    }
+    .header {
+        padding-bottom: 0;
+    }
+    .breadcrumbs {
+        margin-top: 32px;
+    }
+    .contact-page-map-wrapper {
+        height: 720px;
+    }
+    .contact-page-box {
+        height: fit-content;
+        top: 32px;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 85%;
+        max-width: unset;
+        padding: 32px 24px;
+    }
+    .page-title {
+        font-size: 39px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    .contact-page-box h2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .contact-page-box-lower-title {
+        line-height: 24px;
+        font-size: 22px;
+    }
+    .contact-page-items {
+        margin: 24px 0;
+    }
+    .contact-page-text p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+
+    .sale-page-items-wrap .sale-card {
+        min-width: 320px;
+        max-width: 380px;
+    }
+    .sale-page-items-wrap {
+        justify-content: center;
+    }
+    .sale-page-items-wrap .sale-card {
+        min-height: 400px;
+    }
+    .sale-page-items-wrap  .sale-card-img-2 {
+        right: 200px;
+    }
+    .reviews-page-head {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .reviews-page-head-info-wrap {
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 90px;
+        justify-content: space-between;
+    }
+    .obshi-rate {
+        flex-direction: column;
+        align-items: start;
+        gap: 4px;
+    }
+    .reviews-page-title {
+        margin-bottom: 44px;
+    }
+    .reviews-page-head-info-in button {
+        position: absolute;
+        bottom: -64px;
+        width: 100%;
+    }
+    .custom-select-rev-head {
+        width: 100%;
+        max-width: 400px;
+    }
+    .reviews-page-head-big-rate {
+        font-size: 38px;
+    }
+    .reviews-page-item-lower {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 4px;
+    }
+    .reviews-page-item {
+        padding: 28px 20px;
+    }
+    .reviews-page-item-head-stars img {
+        width: 16px;
+    }
+    .reviews-page-item-head-rate span {
+        font-size: 16px;
+    }
+    .reviews-page-item-head {
+        gap: 20px;
+    }
+    .reviews-page-items-nav {
+        width: 100%;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .reviews-page-form-box {
+        padding: 32px 20px;
+        padding-bottom: 100px;
+    }
+    .reviews-page-form-box-title {
+        font-size: 23px;
+        text-align: center;
+    }
+    .reviews-page-form-wrap {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .reviews-page-form-box form input {
+        width: 100%;
+        min-width: unset;
+    }
+    .reviews-page-form-textarea-lower button{
+        position: absolute;
+        bottom: -84px;
+        width: 100%;
+        left: 0;
+    }
+    .reviews-page-form-box form textarea {
+        min-height: 420px;
+    }
+    .calc-page-content-wrap {
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .calc-page-bar {
+        padding: 20px;
+    }
+    .calc-page-content-left h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .rev-page-dec-1 {
+        display: none;
+    }
+    .calc-page-right-box {
+        width: 100%;
+        margin-top: 32px;
+    }
+    .calc-screen .accordion-item-header {
+        font-size: 17px;
+    }
+    .calc-tabs__nav {
+        overflow-x: auto;
+        display: flex;
+        width: 110%;
+        position: relative;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 16px;
+    }
+    .calc-tabs__nav::after {
+        content: "";
+        flex: 0 0 40px;
+    }
+    .calc-tabs__btn {
+        min-width: 240px;
+        padding-right: 32px;
+        padding-left: 32px;
+        text-wrap: nowrap;
+        width: fit-content;
+        max-width: unset;
+    }
+    .calc-tabs__nav {
+        gap: 12px;
+    }
+    .calc-tabs__btn {
+        height: 60px;
+    }
+    .calc-tabs__btn.btn-def {
+        height: 56px;
+    }
+    .calc__top {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+    .calc-accord-item {
+        min-width: 160px;
+    }
+    .calc-accord-items {
+        gap: 10px;
+    }
+    .calc-accord-item__counter {
+        gap: 6px;
+    }
+    .calc-accord-item__input {
+        width: 50px;
+    }
+    .calc-accord-item__tooltip {
+        width: fit-content;
+        min-width: 120px;
+    }
+    .calc-screen .accordion-item-body-content {
+        margin-top: 10px;
+    }
+    .calc-page-bar-text-subtitle {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .calc-page-bar-text-title {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    
+    .price-page-item h2 {
+        margin: 0 auto;
+        max-width: 340px;
+        margin-bottom: 20px;
+    }
 }

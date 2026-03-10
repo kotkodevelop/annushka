@@ -64,15 +64,16 @@
         </div>
 
         <div class="header-burger">
-          <img src="assets/img/menu-burger.svg" alt="burger">
+          <img src="assets/img/menu-burger.svg" alt="burger" class="header-burger-opener"> 
+          <img src="assets/img/close-dropdown.svg" alt="burger" class="header-burger-close"> 
         </div>
 
       </div>
 
       <div class="container header__bottom">
         <nav class="nav" aria-label="Главное меню">
-          <a class="nav__link" href="#">Уборка</a>
-          <a class="nav__link" href="#">Окна</a>
+          <div class="nav__link" data-menu="cleaning">Уборка</div>
+          <div class="nav__link">Окна</div>
           <a class="nav__link" href="#">Химчистка</a>
           <a class="nav__link" href="#">Юрлицам</a>
           <a class="nav__link" href="#">Еще …</a>
@@ -82,9 +83,97 @@
           <img class="become__ic" src="assets/img/user.svg" alt="user" />
           <span>Стать исполнителем</span>
         </a>
+
+        
       </div>
 
    
+      <div class="header_dropmenu" data-menu="cleaning">
+        <div class="container">
+          <div class="header__dropmenu-wrap">
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="close-dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path fill="#6A6A6A" fill-rule="evenodd" d="M15.697 1.766A1.033 1.033 0 0 0 14.57.08a1.03 1.03 0 0 0-.336.224L8 6.539 1.766.303A1.035 1.035 0 1 0 .303 1.766L6.539 8 .303 14.234a1.035 1.035 0 0 0 1.463 1.463L8 9.461l6.235 6.236a1.034 1.034 0 0 0 1.462-1.463L9.46 8l6.236-6.234Z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </header>
 
@@ -93,17 +182,91 @@
     <main>
 
       <div class="mob-menu">
-        <div class="header__closeBar">
-          <img src="assets/img/close-modal.svg" alt="close">
-        </div>
         <div class="mob-menu-wrapper">
-          <nav class="nav" aria-label="Главное меню">
-            <a class="nav__link" href="#">Уборка</a>
-            <a class="nav__link" href="#">Окна</a>
-            <a class="nav__link" href="#">Химчистка</a>
-            <a class="nav__link" href="#">Юрлицам</a>
-            <a class="nav__link" href="#">Еще …</a>
+          <nav class="mobile-nav" aria-label="Мобильное меню">
+            <div class="mobile-nav__list">
+
+              <!-- Пункт с вложенностью -->
+              <div class="mobile-nav__item">
+                <button class="mobile-nav__toggle" type="button" aria-expanded="false">
+                  <span class="mobile-nav__title">Услуги для квартир</span>
+                  <span class="mobile-nav__icon" aria-hidden="true">
+                    <img src="assets/img/arrow-nav.svg" alt="arrow">
+                  </span>
+                </button>
+
+                <div class="mobile-nav__body">
+                  <div class="mobile-nav__content">
+                    <a href="#" class="mobile-nav__sublink">Поддерживающая уборка</a>
+                    <a href="#" class="mobile-nav__sublink">Генеральная уборка</a>
+                    <a href="#" class="mobile-nav__sublink">Мытье окон</a>
+                    <a href="#" class="mobile-nav__sublink">Химчистка мебели</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Пункт с вложенностью -->
+              <div class="mobile-nav__item">
+                <button class="mobile-nav__toggle" type="button" aria-expanded="false">
+                  <span class="mobile-nav__title">Услуги для офиса</span>
+                  <span class="mobile-nav__icon" aria-hidden="true">
+                    <img src="assets/img/arrow-nav.svg" alt="arrow">
+                  </span>
+                </button>
+
+                <div class="mobile-nav__body">
+                  <div class="mobile-nav__content">
+                    <a href="#" class="mobile-nav__sublink">Ежедневная уборка</a>
+                    <a href="#" class="mobile-nav__sublink">Уборка после ремонта</a>
+                    <a href="#" class="mobile-nav__sublink">Мытье фасадов</a>
+                    <a href="#" class="mobile-nav__sublink">Обслуживание офисов</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Пункт без вложенности: сразу ссылка -->
+              <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#">
+                  <span class="mobile-nav__title">Цены</span>
+                </a>
+              </div>
+
+              <!-- Пункт без вложенности: сразу ссылка -->
+              <div class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#">
+                  <span class="mobile-nav__title">Контакты</span>
+                </a>
+              </div>
+
+              <!-- Пункт с вложенностью -->
+              <div class="mobile-nav__item">
+                <button class="mobile-nav__toggle active" type="button" aria-expanded="true">
+                  <span class="mobile-nav__title">О нас</span>
+                  <span class="mobile-nav__icon" aria-hidden="true">
+                    <img src="assets/img/arrow-nav.svg" alt="arrow">
+                  </span>
+                </button>
+
+                <div class="mobile-nav__body" style="max-height: 500px;">
+                  <div class="mobile-nav__content">
+                    <a href="#" class="mobile-nav__sublink">Контакты</a>
+                    <a href="#" class="mobile-nav__sublink">О компании</a>
+                    <a href="#" class="mobile-nav__sublink">Отзывы</a>
+                    <a href="#" class="mobile-nav__sublink">Вакансии</a>
+                    <a href="#" class="mobile-nav__sublink">Блог</a>
+                    <a href="#" class="mobile-nav__sublink">Вопросы и ответы</a>
+                     <a href="#" class="mobile-nav__sublink">О компании</a>
+                    <a href="#" class="mobile-nav__sublink">Отзывы</a>
+                    <a href="#" class="mobile-nav__sublink">Вакансии</a>
+                    <a href="#" class="mobile-nav__sublink">Блог</a>
+                    <a href="#" class="mobile-nav__sublink">Вопросы и ответы</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </nav>
+          
           <div class="header__socials" aria-label="Соцсети">
             <a class="ic" href="#" aria-label="Telegram">
               <img src="assets/img/tg-header.svg" alt="tg" />
@@ -327,6 +490,9 @@
                 <div class="advantages-num">1</div>
               </div>
               <img src="assets/img/adv-1.svg" alt="adv-img" class="adv__img">
+              <div class="adv-card-hover-text">
+                Перед тем, как взять на работы мы собеседуем и проверяем персонал. Каждый клинер проходит обучение по итого которого пишет тест и сдает экзамен. Из 100 кандидатов мы берем примерно 5.
+              </div>
             </article>
             <article class="card">
               <div class="card-title-wrap">
@@ -334,6 +500,9 @@
                 <div class="advantages-num">2</div>
               </div>
               <img src="assets/img/adv-2.svg" alt="adv-img" class="adv__img">
+              <div class="adv-card-hover-text">
+                Перед тем, как взять на работы мы собеседуем и проверяем персонал. Каждый клинер проходит обучение по итого которого пишет тест и сдает экзамен. Из 100 кандидатов мы берем примерно 5.
+              </div>
             </article>
             <article class="card">
               <div class="card-title-wrap">
@@ -341,6 +510,9 @@
                 <div class="advantages-num">3</div>
               </div>
               <img src="assets/img/adv-3.svg" alt="adv-img" class="adv__img">
+              <div class="adv-card-hover-text">
+                Перед тем, как взять на работы мы собеседуем и проверяем персонал. Каждый клинер проходит обучение по итого которого пишет тест и сдает экзамен. Из 100 кандидатов мы берем примерно 5.
+              </div>
             </article>
             <article class="card">
               <div class="card-title-wrap">
@@ -348,6 +520,9 @@
                 <div class="advantages-num">4</div>
               </div>
               <img src="assets/img/adv-4.svg" alt="adv-img" class="adv__img">
+              <div class="adv-card-hover-text">
+                Перед тем, как взять на работы мы собеседуем и проверяем персонал. Каждый клинер проходит обучение по итого которого пишет тест и сдает экзамен. Из 100 кандидатов мы берем примерно 5.
+              </div>
             </article>
           </div>
         </div>
@@ -611,6 +786,10 @@
             height: 25px;
             background: url("assets/img/stars-icon.svg") no-repeat center;
             background-size: contain;
+            transition: .3s;
+          }
+          .pricing-item:hover .pricing-item__list li::before {
+            background: url("assets/img/stars-icon-white.svg") no-repeat center;
           }
         </style>
         <div class="container">
@@ -1210,6 +1389,26 @@
       <!-- Team -->
       <section class="team section">
         <div class="container">
+          <style>
+            .white-star {
+              display: none;
+            }
+            .team-item:hover .team-item-grade .white-star{
+              display: block;
+            }
+            .team-item:hover .team-item-grade .gray-star{
+              display: none;
+            }
+            .team-item:hover .team-item-add-blue {
+              display: none;
+            }
+            .team-item-add-white {
+              display: none;
+            }
+            .team-item:hover .team-item-add-white {
+              display: block;
+            }
+          </style>
           <div class="team-wrap">
             <img src="assets/img/team-dec-1.svg" alt="team-dec" class="team-dec-1">
             <img src="assets/img/team-dec2.svg" alt="team-dec" class="team-dec-2">
@@ -1230,44 +1429,64 @@
                 <div class="team-item-text">
                   <div class="team-item-title">Наталья</div>
                   <div class="team-item-grade">
-                    <img src="assets/img/gray-star.svg" alt="star">
+                    <img src="assets/img/gray-star.svg" alt="star" class="gray-star">
+                    <img src="assets/img/white-star.svg" alt="star" class="white-star">
                     <span>4,9</span>
                   </div>
+                  <div class="team-item-hidden-text">
+                    Имеет педагогическое образование, ранее работала учителем и воспитателем в детском саду.
+                  </div>
                 </div>
-                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add">
+                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add team-item-add-blue">
+                <img src="assets/img/add-icon-white.svg" alt="add" class="team-item-add team-item-add-white">
               </div>
               <div class="team-item">
                 <img src="assets/img/team.webp" alt="team" class="team-item-img">
                 <div class="team-item-text">
                   <div class="team-item-title">Наталья</div>
                   <div class="team-item-grade">
-                    <img src="assets/img/gray-star.svg" alt="star">
+                    <img src="assets/img/gray-star.svg" alt="star" class="gray-star">
+                    <img src="assets/img/white-star.svg" alt="star" class="white-star">
                     <span>4,9</span>
                   </div>
+                  <div class="team-item-hidden-text">
+                    Имеет педагогическое образование, ранее работала учителем и воспитателем в детском саду.
+                  </div>
                 </div>
-                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add">
+                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add team-item-add-blue">
+                <img src="assets/img/add-icon-white.svg" alt="add" class="team-item-add team-item-add-white">
               </div>
               <div class="team-item">
                 <img src="assets/img/team.webp" alt="team" class="team-item-img">
                 <div class="team-item-text">
                   <div class="team-item-title">Наталья</div>
                   <div class="team-item-grade">
-                    <img src="assets/img/gray-star.svg" alt="star">
+                    <img src="assets/img/gray-star.svg" alt="star" class="gray-star">
+                    <img src="assets/img/white-star.svg" alt="star" class="white-star">
                     <span>4,9</span>
                   </div>
+                  <div class="team-item-hidden-text">
+                    Имеет педагогическое образование, ранее работала учителем и воспитателем в детском саду.
+                  </div>
                 </div>
-                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add">
+                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add team-item-add-blue">
+                <img src="assets/img/add-icon-white.svg" alt="add" class="team-item-add team-item-add-white">
               </div>
               <div class="team-item">
                 <img src="assets/img/team.webp" alt="team" class="team-item-img">
                 <div class="team-item-text">
                   <div class="team-item-title">Наталья</div>
                   <div class="team-item-grade">
-                    <img src="assets/img/gray-star.svg" alt="star">
+                    <img src="assets/img/gray-star.svg" alt="star" class="gray-star">
+                    <img src="assets/img/white-star.svg" alt="star" class="white-star">
                     <span>4,9</span>
                   </div>
+                  <div class="team-item-hidden-text">
+                    Имеет педагогическое образование, ранее работала учителем и воспитателем в детском саду.
+                  </div>
                 </div>
-                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add">
+                <img src="assets/img/add-icon.svg" alt="add" class="team-item-add team-item-add-blue">
+                <img src="assets/img/add-icon-white.svg" alt="add" class="team-item-add team-item-add-white">
               </div>
             </div>
              <a href="#" class="team-go-btn-mob-a">

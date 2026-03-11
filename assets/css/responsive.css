@@ -730,6 +730,7 @@
     .header-burger {
         display: flex;
         width: 45px;
+        min-width: 45px;
         height: 45px;
         background: var(--blue);
         justify-content: center;
@@ -959,6 +960,8 @@
     }
     .calc-screen .accordion-item-header {
         font-size: 17px;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
     .calc-tabs__nav {
         overflow-x: auto;
@@ -1173,6 +1176,86 @@
     .etaps-button-wrapper a {
         width: 100%;
     }
+    .header__phone_wrapper {
+        justify-content: flex-end;
+        flex: 1;
+    }
+    .blog-items-wrap {
+        justify-content: center;
+    }
+    .blog-item {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .blog-item-img img {
+        height: 230px;
+    }
+    .blog-item-title {
+        height: auto;
+    }
+    .blog-item-desc {
+        height: auto;
+    }
+    .blog-page-title {
+        margin-bottom: 8px;
+    }
+    .blog-page .sub {
+        max-width: 320px;
+        margin: 0 auto;
+        line-height: 24px;
+    }
+    .post-page h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .post-page {
+        padding: 0 24px;
+    }
+    .post-params-wrap {
+        flex-wrap: wrap;
+    }
+    .post-params {
+        flex-direction: column;
+        align-items: start;
+    }
+    .post-text-wrap h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .post-text-wrap h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .rate-page-table-wrapper {
+        overflow-x: scroll;
+        position: relative;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+    .rate-page-table-wrapper-main {
+        position: relative;
+    }
+    .rate-page-table-wrapper-main::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -10px;
+        width: 60px;
+        height: 100%;
+        pointer-events: none;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+    .rate-page-table-wrapper {
+        margin: 20px 0;
+    }
+    .blog-page-dec-1 {
+        display: none;
+    }
+    .blog-page-dec-2 {
+        display: none;
+    }
+      
 }
 
 @media (max-width: 768px) {

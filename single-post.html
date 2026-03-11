@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Клининговая компания</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  </head>
+
+  <body>
+
+    <style>
+      .order__check:checked + .order__check-ui {
+        background: url("assets/img/check.svg") center center no-repeat;
+        background-size: cover !important;
+        border-color: transparent;
+      }
+    </style>
+
+   <header class="header">
+
+      <div class="container header__top">
+        <!-- left: logo -->
+        <a class="brand" href="#">
+          <img class="brand__logo" src="assets/img/logo.webp" alt="Аннушка" />
+        </a>
+
+        <!-- center: socials -->
+        <div class="header__socials" aria-label="Соцсети">
+          <a class="ic" href="#" aria-label="Telegram">
+            <img src="assets/img/tg-header.svg" alt="tg" />
+          </a>
+          <a class="ic" href="#" aria-label="VK">
+            <img src="assets/img/vk-header.svg" alt="vk" />
+          </a>
+          <a class="ic" href="#" aria-label="WhatsApp">
+            <img src="assets/img/ws-header.svg" alt="ws" />
+          </a>
+        </div>
+
+        <div class="header__phone_wrapper">
+          <button class="bell" aria-label="Уведомления">
+            <img src="assets/img/bell-header.svg" alt="bell" />
+          </button>
+          <a class="header__phone" href="tel:+74952129354">
+            <img class="header__phone-ic" src="assets/img/phone-header.svg" alt="phone" />
+            <span>+7 (495) 212-93-54</span>
+          </a>
+        </div>
+
+        <div class="header__done">
+          <img class="header__done-ic" src="assets/img/check.svg" alt="check" />
+          <div class="header__done-text">
+            <div class="header__done-num" id="counter-number-head">1 028 987</div>
+            <div class="header__done-sub">выполненных заказов</div>
+          </div>
+        </div>
+
+        <div class="header-burger">
+          <img src="assets/img/menu-burger.svg" alt="burger" class="header-burger-opener"> 
+          <img src="assets/img/close-dropdown.svg" alt="burger" class="header-burger-close"> 
+        </div>
+
+      </div>
+
+      <div class="container header__bottom">
+        <nav class="nav" aria-label="Главное меню">
+          <div class="nav__link" data-menu="cleaning">Уборка</div>
+          <div class="nav__link">Окна</div>
+          <a class="nav__link" href="#">Химчистка</a>
+          <a class="nav__link" href="#">Юрлицам</a>
+          <a class="nav__link" href="#">Еще …</a>
+        </nav>
+
+        <a class="become" href="#">
+          <img class="become__ic" src="assets/img/user.svg" alt="user" />
+          <span>Стать исполнителем</span>
+        </a>
+
+        
+      </div>
+
+   
+      <div class="header_dropmenu" data-menu="cleaning">
+        <div class="container">
+          <div class="header__dropmenu-wrap">
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="close-dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path fill="#6A6A6A" fill-rule="evenodd" d="M15.697 1.766A1.033 1.033 0 0 0 14.57.08a1.03 1.03 0 0 0-.336.224L8 6.539 1.766.303A1.035 1.035 0 1 0 .303 1.766L6.539 8 .303 14.234a1.035 1.035 0 0 0 1.463 1.463L8 9.461l6.235 6.236a1.034 1.034 0 0 0 1.462-1.463L9.46 8l6.236-6.234Z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+
+    </header>
+
+      
+
+    <main>
+
+        <div class="mob-menu">
+            <div class="mob-menu-wrapper">
+            <nav class="mobile-nav" aria-label="Мобильное меню">
+                <div class="mobile-nav__list">
+
+                <!-- Пункт с вложенностью -->
+                <div class="mobile-nav__item">
+                    <button class="mobile-nav__toggle" type="button" aria-expanded="false">
+                    <span class="mobile-nav__title">Услуги для квартир</span>
+                    <span class="mobile-nav__icon" aria-hidden="true">
+                        <img src="assets/img/arrow-nav.svg" alt="arrow">
+                    </span>
+                    </button>
+
+                    <div class="mobile-nav__body">
+                    <div class="mobile-nav__content">
+                        <a href="#" class="mobile-nav__sublink">Поддерживающая уборка</a>
+                        <a href="#" class="mobile-nav__sublink">Генеральная уборка</a>
+                        <a href="#" class="mobile-nav__sublink">Мытье окон</a>
+                        <a href="#" class="mobile-nav__sublink">Химчистка мебели</a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Пункт с вложенностью -->
+                <div class="mobile-nav__item">
+                    <button class="mobile-nav__toggle" type="button" aria-expanded="false">
+                    <span class="mobile-nav__title">Услуги для офиса</span>
+                    <span class="mobile-nav__icon" aria-hidden="true">
+                        <img src="assets/img/arrow-nav.svg" alt="arrow">
+                    </span>
+                    </button>
+
+                    <div class="mobile-nav__body">
+                    <div class="mobile-nav__content">
+                        <a href="#" class="mobile-nav__sublink">Ежедневная уборка</a>
+                        <a href="#" class="mobile-nav__sublink">Уборка после ремонта</a>
+                        <a href="#" class="mobile-nav__sublink">Мытье фасадов</a>
+                        <a href="#" class="mobile-nav__sublink">Обслуживание офисов</a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Пункт без вложенности: сразу ссылка -->
+                <div class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">
+                    <span class="mobile-nav__title">Цены</span>
+                    </a>
+                </div>
+
+                <!-- Пункт без вложенности: сразу ссылка -->
+                <div class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">
+                    <span class="mobile-nav__title">Контакты</span>
+                    </a>
+                </div>
+
+                <!-- Пункт с вложенностью -->
+                <div class="mobile-nav__item">
+                    <button class="mobile-nav__toggle active" type="button" aria-expanded="true">
+                    <span class="mobile-nav__title">О нас</span>
+                    <span class="mobile-nav__icon" aria-hidden="true">
+                        <img src="assets/img/arrow-nav.svg" alt="arrow">
+                    </span>
+                    </button>
+
+                    <div class="mobile-nav__body" style="max-height: 500px;">
+                    <div class="mobile-nav__content">
+                        <a href="#" class="mobile-nav__sublink">Контакты</a>
+                        <a href="#" class="mobile-nav__sublink">О компании</a>
+                        <a href="#" class="mobile-nav__sublink">Отзывы</a>
+                        <a href="#" class="mobile-nav__sublink">Вакансии</a>
+                        <a href="#" class="mobile-nav__sublink">Блог</a>
+                        <a href="#" class="mobile-nav__sublink">Вопросы и ответы</a>
+                        <a href="#" class="mobile-nav__sublink">О компании</a>
+                        <a href="#" class="mobile-nav__sublink">Отзывы</a>
+                        <a href="#" class="mobile-nav__sublink">Вакансии</a>
+                        <a href="#" class="mobile-nav__sublink">Блог</a>
+                        <a href="#" class="mobile-nav__sublink">Вопросы и ответы</a>
+                    </div>
+                    </div>
+                </div>
+
+                </div>
+            </nav>
+            
+            <div class="header__socials" aria-label="Соцсети">
+                <a class="ic" href="#" aria-label="Telegram">
+                <img src="assets/img/tg-header.svg" alt="tg" />
+                </a>
+                <a class="ic" href="#" aria-label="VK">
+                <img src="assets/img/vk-header.svg" alt="vk" />
+                </a>
+                <a class="ic" href="#" aria-label="WhatsApp">
+                <img src="assets/img/ws-header.svg" alt="ws" />
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal contact -->
+        <div class="modal" id="contact-modal" aria-hidden="true">
+            <div class="modal__overlay" data-modal-close></div>
+
+            <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="myModalTitle">
+            <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                <img src="assets/img/close-modal.svg" alt="close">
+            </button>
+
+            <div class="modal-content-wrap">
+                <h2>Оформите заявку</h2>
+                <form class="modal-form">
+                <input class="modal__input" type="text" name="phone" placeholder="Фамилия и имя">
+                <input class="modal__input" type="tel" name="tel" placeholder="Номер телефона">
+                <input class="modal__input" type="email" name="email" placeholder="Электронная почта">
+
+                <label class="order__consent">
+                    <input class="order__check" type="checkbox" checked="">
+                    <span class="order__check-ui" aria-hidden="true"></span>
+                    <span class="order__consent-text">
+                    Даю согласие на <a href="#">обработку персональных данных</a>
+                    </span>
+                </label>
+                <button class="btn-def rounded" type="submit"><span>Отправить</span></button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <div class="fixed-connects">
+            <div class="fixed-connects-btn fixed-connects-btn-tg">
+            <a href="#">
+                <img src="assets/img/tg-round.svg" alt="tg">
+            </a>
+            </div>
+            <div class="fixed-connects-btn fixed-connects-btn-max">
+            <a href="#">
+                <img src="assets/img/max-round.webp" alt="max">
+            </a>
+            </div>
+            <div class="fixed-connects-btn fixed-connects-btn-wa">
+            <a href="#">
+                <img src="assets/img/wa-round.svg" alt="wa">
+            </a>
+            </div>
+        </div>
+
+        <div class="fixed-phone" data-modal-open="contact-modal">
+            <img src="assets/img/phone-fixed.svg" alt="phone">
+        </div>
+        
+        <!--Page filter-->
+        <div class="page-filter"></div>
+
+        <div class="container">
+            <div class="breadcrumbs">
+                <li class="link"><a href="index.html">Главная</a></li>
+                <div class="breadcrums-devider">></div>
+                <li class="current">Чем отмыть монтажную пену после ремонта</li>
+            </div>
+        </div>
+
+        <div class="post-page">
+            <img src="assets/img/blog-dec-1.svg" alt="dec" class="blog-dec-1">
+            <img src="assets/img/blog-dec-2.svg" alt="dec" class="blog-dec-2">
+            <h1>Чем отмыть монтажную пену после ремонта</h1>
+            <div class="post-params">
+                <div class="post-params-wrap">
+                    <div class="post-param post-param-date">
+                        <img src="assets/img/post-date.svg" alt="view">
+                        <span>11.03.2026</span>
+                    </div>
+                    <div class="post-param post-param-time">
+                        <img src="assets/img/post-time.svg" alt="view">
+                        <span>3 минуты</span>
+                    </div>
+                    <div class="post-param post-param-view">
+                        <img src="assets/img/blog-view.svg" alt="view">
+                        <span>105</span>
+                    </div>
+                </div>
+                <div class="post-author">
+                    Автор статьи: Татьяна Попова
+                </div>
+            </div>
+            <div class="post-text-wrap">
+                После ремонта или перед большим наведением порядка многие сталкиваются с похожим вопросом. Нужно заказать генеральную уборку или все-таки уборку после ремонта?
+                <br><br>
+                После ремонта многие заказывают генеральную уборку, а потом удивляются, что квартира продолжает пылить. Дело в том, что <a href="#">генеральная уборка</a> и уборка после ремонта — это две разные услуги и если перепутать их, часть строительных загрязнений просто останется.
+                <br><br>
+                На первый взгляд кажется, что разницы почти нет.
+                <img src="assets/img/blog-in.webp" alt="blog" height="400">
+                <p>
+                    После ремонта или перед большим наведением порядка многие сталкиваются с похожим вопросом. Нужно заказать генеральную уборку или все-таки уборку после ремонта?
+                    <br><br>
+                    После ремонта многие заказывают генеральную уборку, а потом удивляются, что квартира продолжает пылить. Дело в том, что генеральная уборка и уборка после ремонта — это две разные услуги и если перепутать их, часть строительных загрязнений просто останется.
+                    <br><br>
+                    На первый взгляд кажется, что разницы почти нет.
+                </p>
+            </div>
+            <div class="rate-page-table-wrapper-main">
+                <div class="rate-page-table-wrapper">
+                    <table class="rate-page-table">
+                        <thead class="rate-page-table__head">
+                        <tr class="rate-page-table__row">
+                            <th class="rate-page-table__th">Пункт</th>
+                            <th class="rate-page-table__th">Самостоятельная уборка</th>
+                            <th class="rate-page-table__th">Уборка от профи</th>
+                        </tr>
+                        </thead>
+
+                        <tbody class="rate-page-table__body">
+                        <tr class="rate-page-table__row">
+                            <td class="rate-page-table__td">Время</td>
+                            <td class="rate-page-table__td">1–3 дня</td>
+                            <td class="rate-page-table__td">5–8 часов</td>
+                        </tr>
+
+                        <tr class="rate-page-table__row">
+                            <td class="rate-page-table__td">Химия</td>
+                            <td class="rate-page-table__td">Бытовая</td>
+                            <td class="rate-page-table__td">Проф. составы (HG, Kiilto)</td>
+                        </tr>
+
+                        <tr class="rate-page-table__row">
+                            <td class="rate-page-table__td">Инструменты</td>
+                            <td class="rate-page-table__td">Домашний набор</td>
+                            <td class="rate-page-table__td">
+                            Парогенератор Karcher, промышленный пылесос
+                            </td>
+                        </tr>
+
+                        <tr class="rate-page-table__row">
+                            <td class="rate-page-table__td">Риски</td>
+                            <td class="rate-page-table__td">
+                            Можно поцарапать или «заполировать» грязь
+                            </td>
+                            <td class="rate-page-table__td">
+                            Ответственность и гарантия качества
+                            </td>
+                        </tr>
+
+                        <tr class="rate-page-table__row">
+                            <td class="rate-page-table__td">Результат</td>
+                            <td class="rate-page-table__td">
+                            Неровный, местами с разводами
+                            </td>
+                            <td class="rate-page-table__td">
+                            Глубокая чистка «под ключ»
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="post-text-wrap">
+                <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим вопросом. Нужно заказать генеральную уборку или все-таки уборку после ремонта?</p>
+                <br>
+                <h2>Чем отмыть монтажную пену после ремонта</h2>
+                <p>После ремонта или перед большим наведением порядка:</p>
+                <ul>
+                    <li>После ремонта или перед большим</li>
+                    <li>После ремонта или перед большим наведением</li>
+                    <li>После ремонта или перед</li>
+                </ul>
+                <h3>Чем отмыть монтажную пену после ремонта</h3>
+                <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим вопросом. Нужно заказать генеральную уборку или все-таки уборку после ремонта?</p>
+            </div>
+            <div class="post-share-itms">
+                <a href="#">
+                    <img src="assets/img/blog-vk.webp" alt="vk">
+                </a>
+                <a href="#">
+                    <img src="assets/img/blog-ok.webp" alt="ok">
+                </a>
+                <a href="#">
+                    <img src="assets/img/blog-tg.webp" alt="tg">
+                </a>
+            </div>
+        </div>
+
+        <div class="post-page-more">
+            <div class="container">
+                <h2>Читайте также</h2>
+                <div class="post-slider-container">
+                    <!-- Навигация -->
+                    <button class="post-slider__prev swiper-prev-buton" type="button" aria-label="Назад">
+                    <img src="assets/img/swiper-prev.svg" alt="prev">
+                    </button>
+
+                    <button class="post-slider__next swiper-next-buton" type="button" aria-label="Вперёд">
+                    <img src="assets/img/swiper-next.svg" alt="next">
+                    </button>
+
+                    <div class="sale-slider__swiper swiper js-post-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#">
+                                    <div class="blog-item-img">
+                                        <img src="assets/img/blog-img.webp" alt="blog">
+                                    </div>
+                                </a>
+                                <div class="blog-item-text">
+                                    <div class="blog-item-title">
+                                        <a href="#">Чем отмыть монтажную пену после ремонта</a>
+                                    </div>
+                                    <div class="blog-item-desc">
+                                        <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим похожимпохожимпохожим</p>
+                                    </div>
+                                    <div class="blog-item-lower">
+                                        <div class="blog-item-date">
+                                            11.03.2026
+                                        </div>
+                                        <div class="blog-item-views">
+                                            <img src="assets/img/blog-view.svg" alt="view">
+                                            <span>105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#">
+                                    <div class="blog-item-img">
+                                        <img src="assets/img/blog-img.webp" alt="blog">
+                                    </div>
+                                </a>
+                                <div class="blog-item-text">
+                                    <div class="blog-item-title">
+                                        <a href="#">Чем отмыть монтажную пену после ремонта</a>
+                                    </div>
+                                    <div class="blog-item-desc">
+                                        <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим похожимпохожимпохожим</p>
+                                    </div>
+                                    <div class="blog-item-lower">
+                                        <div class="blog-item-date">
+                                            11.03.2026
+                                        </div>
+                                        <div class="blog-item-views">
+                                            <img src="assets/img/blog-view.svg" alt="view">
+                                            <span>105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#">
+                                    <div class="blog-item-img">
+                                        <img src="assets/img/blog-img.webp" alt="blog">
+                                    </div>
+                                </a>
+                                <div class="blog-item-text">
+                                    <div class="blog-item-title">
+                                        <a href="#">Чем отмыть монтажную пену после ремонта</a>
+                                    </div>
+                                    <div class="blog-item-desc">
+                                        <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим похожимпохожимпохожим</p>
+                                    </div>
+                                    <div class="blog-item-lower">
+                                        <div class="blog-item-date">
+                                            11.03.2026
+                                        </div>
+                                        <div class="blog-item-views">
+                                            <img src="assets/img/blog-view.svg" alt="view">
+                                            <span>105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#">
+                                    <div class="blog-item-img">
+                                        <img src="assets/img/blog-img.webp" alt="blog">
+                                    </div>
+                                </a>
+                                <div class="blog-item-text">
+                                    <div class="blog-item-title">
+                                        <a href="#">Чем отмыть монтажную пену после ремонта</a>
+                                    </div>
+                                    <div class="blog-item-desc">
+                                        <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим похожимпохожимпохожим</p>
+                                    </div>
+                                    <div class="blog-item-lower">
+                                        <div class="blog-item-date">
+                                            11.03.2026
+                                        </div>
+                                        <div class="blog-item-views">
+                                            <img src="assets/img/blog-view.svg" alt="view">
+                                            <span>105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#">
+                                    <div class="blog-item-img">
+                                        <img src="assets/img/blog-img.webp" alt="blog">
+                                    </div>
+                                </a>
+                                <div class="blog-item-text">
+                                    <div class="blog-item-title">
+                                        <a href="#">Чем отмыть монтажную пену после ремонта</a>
+                                    </div>
+                                    <div class="blog-item-desc">
+                                        <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим похожимпохожимпохожим</p>
+                                    </div>
+                                    <div class="blog-item-lower">
+                                        <div class="blog-item-date">
+                                            11.03.2026
+                                        </div>
+                                        <div class="blog-item-views">
+                                            <img src="assets/img/blog-view.svg" alt="view">
+                                            <span>105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-item">
+                                <a href="#">
+                                    <div class="blog-item-img">
+                                        <img src="assets/img/blog-img.webp" alt="blog">
+                                    </div>
+                                </a>
+                                <div class="blog-item-text">
+                                    <div class="blog-item-title">
+                                        <a href="#">Чем отмыть монтажную пену после ремонта</a>
+                                    </div>
+                                    <div class="blog-item-desc">
+                                        <p>После ремонта или перед большим наведением порядка многие сталкиваются с похожим похожимпохожимпохожим</p>
+                                    </div>
+                                    <div class="blog-item-lower">
+                                        <div class="blog-item-date">
+                                            11.03.2026
+                                        </div>
+                                        <div class="blog-item-views">
+                                            <img src="assets/img/blog-view.svg" alt="view">
+                                            <span>105</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      
+
+        <!-- Order -->
+        <section class="order">
+            <div class="order__inner container">
+            <img src="assets/img/order-dec-1.webp" alt="order-dec" class="order-dec-1">
+            <img src="assets/img/order-dec-2.webp" alt="order-dec" class="order-dec-2">
+            <!-- Left -->
+            <div class="order__left">
+                <h2 class="order__title">
+                Закажите бесплатную<br />
+                консультацию<br />
+                с менеджером
+                </h2>
+
+                <p class="order__subtitle">На бесплатной консультации вы сможете:</p>
+
+                <ul class="order__list">
+                <li class="order__item">Узнать стоимость вашей уборки</li>
+                <li class="order__item">Задать необходимый вопрос</li>
+                <li class="order__item">Оформить заказ на уборку</li>
+                </ul>
+            </div>
+
+            <!-- Middle (image) -->
+            <div class="order__media" aria-hidden="true">
+                <img class="order__img" src="assets/img/manager.webp" alt="Менеджер" />
+
+                <div class="order__badge">
+                <div class="order__badge-name">Юлия</div>
+                <div class="order__badge-role">Менеджер по клинингу</div>
+                </div>
+            </div>
+
+            <!-- Right (card) -->
+            <div class="order__card">
+                <h3 class="order__card-title">
+                Оставьте заявку<br />
+                на бесплатную консультацию
+                </h3>
+
+                <p class="order__card-subtitle">
+                Напишите нам<br />
+                в удобный для вас мессенджер
+                </p>
+
+                <div class="order__actions">
+                <a class="order__btn order__btn--wa" href="#" role="button">
+                    <span class="order__btn-ic" aria-hidden="true">
+                    <!-- WhatsApp icon -->
+                    <img src="assets/img/wa.svg" alt="wa">
+                    </span>
+                    <span class="order__btn-txt">Написать в WhatsApp</span>
+                </a>
+
+                <a class="order__btn order__btn--tg" href="#" role="button">
+                    <span class="order__btn-ic" aria-hidden="true">
+                    <!-- Telegram icon -->
+                    <img src="assets/img/tg.svg" alt="tg">
+                    </span>
+                    <span class="order__btn-txt">Написать в Telegram</span>
+                </a>
+                </div>
+
+                <div class="order__divider">Или оставьте заявку на звонок</div>
+
+                <form class="order__form" action="#" method="post">
+                <label class="order__field">
+                    <span class="order__sr">Ваш номер телефона</span>
+                    <input class="order__input" type="tel" name="phone" placeholder="Ваш номер телефона" />
+                </label>
+
+                <button class="btn-def rounded" type="submit"><span>Отправить</span></button>
+
+                <label class="order__consent">
+                    <input class="order__check" type="checkbox" checked />
+                    <span class="order__check-ui" aria-hidden="true"></span>
+                    <span class="order__consent-text">
+                    Даю согласие на <a href="#">обработку персональных данных</a>
+                    </span>
+                </label>
+                </form>
+            </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top-cols">
+          <div class="footer-col">
+            <div class="footer-col-title">Услуги жилих помещений</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Уборка коммерческих помещений</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Мойка окон и химчистка</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Дополнительные услуги</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Информация</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+        </div>
+        <div class="footer-items">
+          <div class="footer-item">
+            <img src="assets/img/footer-logo.svg" alt="logo" class="footer-logo">
+            <div class="footer-cont-item">
+              <div class="footer-cont-item-title">Контакты клининговой компании "Аннушка"</div>
+              <span>г. Москва: Большой Каретный пер., 22, стр. 3</span>
+            </div>
+            <div class="footer-cont-item">
+              <div class="footer-cont-item-title">Режим работы:</div>
+              <span>с 8.00 до 23.00 <br>
+              Пн-Вс без выходных и праздников
+              </span>
+            </div>
+            <div class="footer-policy">
+              <a href="#">Политика конфиденциальности</a>
+              <p>Ⓒ “Аннушка” 2012-2026</p>
+            </div>
+          </div>
+          <div class="footer-item footer-item-mid">
+            <div class="footer-ya-wrap">
+              <div class="footer-mid-item-title">Рейтинг на Яндекс</div>
+              <img src="assets/img/footer-ya-review.svg" alt="ya" class="footer-ya-rev">
+            </div>
+            <div class="footer-pays">
+              <div div class="footer-mid-item-title">Способы оплаты</div>
+              <div class="footer-pays-items">
+                <img src="assets/img/mastercard.svg" alt="mastercard">
+                <img src="assets/img/sber.svg" alt="sber">
+                <img src="assets/img/wallet.svg" alt="wallet">
+              </div>
+            </div>
+            <div class="footer-codes">
+              <div class="footer-code-item">
+                ИНН:<span>7428937266200</span>
+              </div>
+              <div class="footer-code-item">
+                ОГРНИП:<span>398636629008</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-item">
+            <button class="btn-def footer-c-btn gradi">
+              <span>Заказать звонок</span>
+              </button>
+              <div class="footer-cont-item">
+                <div class="footer-cont-item-title">Связаться с нами</div>
+                <span>capitalclean@ya.ru (для документов)<br>
+                <a href="">+7 (495) 212-93-54</a>
+                </span>
+              </div>
+              <div class="header__socials" aria-label="Соцсети">
+                <a class="ic" href="#" aria-label="Telegram">
+                  <img src="assets/img/tg-header.svg" alt="tg">
+                </a>
+                <a class="ic" href="#" aria-label="VK">
+                  <img src="assets/img/vk-header.svg" alt="vk">
+                </a>
+                <a class="ic" href="#" aria-label="WhatsApp">
+                  <img src="assets/img/ws-header.svg" alt="ws">
+                </a>
+                <button class="btn-def footer-c-btn footer-c-btn-mob gradi">
+                  <span>Заказать звонок</span>
+                </button>
+              </div>
+          </div>
+          <div class="footer-item-mob">
+            <div class="footer-codes">
+              <div class="footer-code-item">
+                ИНН:<span>7428937266200</span>
+              </div>
+              <div class="footer-code-item">
+                ОГРНИП:<span>398636629008</span>
+              </div>
+            </div>
+            <div class="footer-policy">
+              <a href="#">Политика конфиденциальности</a>
+              <p>Ⓒ “Аннушка” 2012-2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+  </body>
+</html>

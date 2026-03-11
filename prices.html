@@ -358,146 +358,150 @@
                 <div class="price-page-item">
                     <h2 class="center">Прайс-лист на уборку квартир</h2>
                     <div class="service__table">
-                        <div class="container">
-                            <div class="service__table is-open" id="serviceTable">
-                                <div class="service__table__wrap">
-                                    <div class="service__table__scroll" id="serviceTableScroll">
-                                        <table class="service__table__grid" role="table" aria-label="Таблица услуг">
-                                            <thead class="service__table__head">
+                        <div class="service__table is-open">
+                            <div class="service__table__wrap">
+                                <div class="service-tabs">
+                                    <button class="service-tab is-active btn-def" data-col="1"><span>Поддерживающая</span></button>
+                                    <button class="service-tab btn-def" data-col="2"><span>Генеральная</span></button>
+                                    <button class="service-tab btn-def" data-col="3"><span>После ремонта</span></button>
+                                    <button class="service-tab btn-def" data-col="4"><span>Царь уборка</span></button>
+                                </div>
+                                <div class="service__table__scroll" id="serviceTableScroll">
+                                    <table class="service__table__grid" role="table" aria-label="Таблица услуг">
+                                        <thead class="service__table__head">
+                                        <tr class="service__table__tr">
+                                            <th class="service__table__th service__table__th--left">ЧТО ВХОДИТ</th>
+                                            <th class="service__table__th">ПОДДЕРЖИВАЮЩАЯ</th>
+                                            <th class="service__table__th">ГЕНЕРАЛЬНАЯ</th>
+                                            <th class="service__table__th">ПОСЛЕ РЕМОНТА</th>
+                                            <th class="service__table__th">ЦАРЬ УБОРКА</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody class="service__table__body">
                                             <tr class="service__table__tr">
-                                                <th class="service__table__th service__table__th--left">ЧТО ВХОДИТ</th>
-                                                <th class="service__table__th">ПОДДЕРЖИВАЮЩАЯ</th>
-                                                <th class="service__table__th">ГЕНЕРАЛЬНАЯ</th>
-                                                <th class="service__table__th">ПОСЛЕ РЕМОНТА</th>
-                                                <th class="service__table__th">ЦАРЬ УБОРКА</th>
+                                                <td class="service__table__td service__table__td--left"><span>Минимальный заказ</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
                                             </tr>
-                                            </thead>
 
-                                            <tbody class="service__table__body">
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left"><span>Минимальный заказ</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Мойка холодильника снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Мойка холодильника снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Духового шкафа снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Духового шкафа снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Очистка кухонных рабочих поверхностей</td>
+                                                <td class="service__table__td service__table__td--center">79 руб.</td>
+                                                <td class="service__table__td service__table__td--center">119 руб.</td>
+                                                <td class="service__table__td service__table__td--center">119 руб.</td>
+                                                <td class="service__table__td service__table__td--center">119 руб.</td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Очистка кухонных рабочих поверхностей</td>
-                                                    <td class="service__table__td service__table__td--center">79 руб.</td>
-                                                    <td class="service__table__td service__table__td--center">119 руб.</td>
-                                                    <td class="service__table__td service__table__td--center">119 руб.</td>
-                                                    <td class="service__table__td service__table__td--center">119 руб.</td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Мойка стеновых панелей «фартука»</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Мойка стеновых панелей «фартука»</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление пыли с кухонной техники</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление пыли с кухонной техники</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Мойка фасадов кухонного гарнитура</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Мойка фасадов кухонного гарнитура</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">ДУХОВОЙ ШКАФ внутри снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">ДУХОВОЙ ШКАФ внутри снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">ХОЛОДИЛЬНИК внутри снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">ХОЛОДИЛЬНИК внутри снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left"><span class="blue">КОМНАТА:</span></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left"><span class="blue">КОМНАТА:</span></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
-
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
 
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -506,146 +510,150 @@
                 <div class="price-page-item">
                     <h2 class="center">Прайс-лист на уборку квартир</h2>
                     <div class="service__table">
-                        <div class="container">
-                            <div class="service__table is-open" id="serviceTable">
-                                <div class="service__table__wrap">
-                                    <div class="service__table__scroll" id="serviceTableScroll">
-                                        <table class="service__table__grid" role="table" aria-label="Таблица услуг">
-                                            <thead class="service__table__head">
+                        <div class="service__table is-open">
+                            <div class="service__table__wrap">
+                                <div class="service-tabs">
+                                    <button class="service-tab is-active btn-def" data-col="1"><span>Поддерживающая</span></button>
+                                    <button class="service-tab btn-def" data-col="2"><span>Генеральная</span></button>
+                                    <button class="service-tab btn-def" data-col="3"><span>После ремонта</span></button>
+                                    <button class="service-tab btn-def" data-col="4"><span>Царь уборка</span></button>
+                                </div>
+                                <div class="service__table__scroll" id="serviceTableScroll">
+                                    <table class="service__table__grid" role="table" aria-label="Таблица услуг">
+                                        <thead class="service__table__head">
+                                        <tr class="service__table__tr">
+                                            <th class="service__table__th service__table__th--left">ЧТО ВХОДИТ</th>
+                                            <th class="service__table__th">ПОДДЕРЖИВАЮЩАЯ</th>
+                                            <th class="service__table__th">ГЕНЕРАЛЬНАЯ</th>
+                                            <th class="service__table__th">ПОСЛЕ РЕМОНТА</th>
+                                            <th class="service__table__th">ЦАРЬ УБОРКА</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody class="service__table__body">
                                             <tr class="service__table__tr">
-                                                <th class="service__table__th service__table__th--left">ЧТО ВХОДИТ</th>
-                                                <th class="service__table__th">ПОДДЕРЖИВАЮЩАЯ</th>
-                                                <th class="service__table__th">ГЕНЕРАЛЬНАЯ</th>
-                                                <th class="service__table__th">ПОСЛЕ РЕМОНТА</th>
-                                                <th class="service__table__th">ЦАРЬ УБОРКА</th>
+                                                <td class="service__table__td service__table__td--left"><span>Минимальный заказ</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
+                                                <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
                                             </tr>
-                                            </thead>
 
-                                            <tbody class="service__table__body">
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left"><span>Минимальный заказ</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                    <td class="service__table__td service__table__td--center"><span class="service__table__price">2990 руб.</span></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Мойка холодильника снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Мойка холодильника снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Духового шкафа снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Духового шкафа снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Очистка кухонных рабочих поверхностей</td>
+                                                <td class="service__table__td service__table__td--center">79 руб.</td>
+                                                <td class="service__table__td service__table__td--center">119 руб.</td>
+                                                <td class="service__table__td service__table__td--center">119 руб.</td>
+                                                <td class="service__table__td service__table__td--center">119 руб.</td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Очистка кухонных рабочих поверхностей</td>
-                                                    <td class="service__table__td service__table__td--center">79 руб.</td>
-                                                    <td class="service__table__td service__table__td--center">119 руб.</td>
-                                                    <td class="service__table__td service__table__td--center">119 руб.</td>
-                                                    <td class="service__table__td service__table__td--center">119 руб.</td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Мойка стеновых панелей «фартука»</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Мойка стеновых панелей «фартука»</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление пыли с кухонной техники</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление пыли с кухонной техники</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Мойка фасадов кухонного гарнитура</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Мойка фасадов кухонного гарнитура</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">ДУХОВОЙ ШКАФ внутри снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">ДУХОВОЙ ШКАФ внутри снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">ХОЛОДИЛЬНИК внутри снаружи</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">ХОЛОДИЛЬНИК внутри снаружи</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left"><span class="blue">КОМНАТА:</span></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                                <td class="service__table__td service__table__td--center"></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left"><span class="blue">КОМНАТА:</span></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                    <td class="service__table__td service__table__td--center"></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление пыли и следов жира с вытяжки</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Чистка и дезинфекция сантехники</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Дезинфекция мест хранения мусора</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
-
-                                                <tr class="service__table__tr">
-                                                    <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                    <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
-                                                </tr>
+                                            <tr class="service__table__tr">
+                                                <td class="service__table__td service__table__td--left">Удаление жирных и масляных пятен</td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-krest.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                                <td class="service__table__td service__table__td--center"><img class="service__table__icon" src="assets/img/table-check.svg" alt=""></td>
+                                            </tr>
 
 
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>

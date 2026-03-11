@@ -47,7 +47,9 @@
   align-items: center;
   cursor: pointer;
 }
-
+.service-tabs {
+  display: none;
+}
 .fixed-phone::before {
   content: '';
   width: 84px;

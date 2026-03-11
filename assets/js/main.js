@@ -434,29 +434,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // service__table toggle
 (() => {
-  const root = document.getElementById('serviceTable');
-  if (!root) return;
+  const tables = document.querySelectorAll('.service__table');
 
-  const btn = document.getElementById('serviceTableBtn');
-  const scroller = document.getElementById('serviceTableScroll');
-  const fade = root.querySelector('.service__table__fade');
+  if (!tables.length) return;
 
-  if (!btn || !scroller) return;
+  tables.forEach(root => {
+    const btn = root.querySelector('.service__table-btn');
+    const scroller = root.querySelector('.service__table__scroll');
+    const fade = root.querySelector('.service__table__fade');
 
-  const syncControls = () => {
-    const needsClamp = scroller.scrollHeight > 600;
+    if (!btn || !scroller) return;
 
-    btn.style.display = needsClamp ? '' : 'none';
+    const syncControls = () => {
+      const needsClamp = scroller.scrollHeight > 600;
 
-    if (fade) fade.style.display = needsClamp ? '' : 'none';
-  };
+      btn.style.display = needsClamp ? '' : 'none';
 
-  btn.addEventListener('click', () => {
-    root.classList.add('is-open');
+      if (fade) {
+        fade.style.display = needsClamp ? '' : 'none';
+      }
+    };
+
+    btn.addEventListener('click', () => {
+      root.classList.add('is-open');
+    });
+
+    syncControls();
+    window.addEventListener('resize', syncControls);
   });
-
-  syncControls();
-  window.addEventListener('resize', syncControls);
 })();
 
 
@@ -776,4 +781,52 @@ document.addEventListener('click', function (e) {
     }
 
     input.value = value;
+});
+
+
+
+
+// Table mob
+document.addEventListener('DOMContentLoaded', function () {
+  const serviceTables = document.querySelectorAll('.service__table');
+
+  serviceTables.forEach(function (tableBlock) {
+    const tabs = tableBlock.querySelectorAll('.service-tab');
+    const table = tableBlock.querySelector('.service__table__grid');
+    const scrollWrap = tableBlock.querySelector('.service__table__scroll');
+
+    if (!tabs.length || !table) return;
+
+    // Ищем активный таб по умолчанию
+    let activeTab = tableBlock.querySelector('.service-tab.is-active');
+    let activeCol = activeTab ? activeTab.dataset.col : '1';
+
+    table.classList.remove('mobile-col-1', 'mobile-col-2', 'mobile-col-3', 'mobile-col-4');
+    table.classList.add('mobile-col-' + activeCol);
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const col = this.dataset.col;
+
+        tabs.forEach(function (btn) {
+          btn.classList.remove('is-active');
+        });
+
+        this.classList.add('is-active');
+
+        table.classList.remove(
+          'mobile-col-1',
+          'mobile-col-2',
+          'mobile-col-3',
+          'mobile-col-4'
+        );
+
+        table.classList.add('mobile-col-' + col);
+
+        if (scrollWrap) {
+          scrollWrap.scrollLeft = 0;
+        }
+      });
+    });
+  });
 });

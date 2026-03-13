@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Клининговая компания</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  </head>
+
+  <body>
+
+    <style>
+      .order__check:checked + .order__check-ui {
+        background: url("assets/img/check.svg") center center no-repeat;
+        background-size: cover !important;
+        border-color: transparent;
+      }
+    </style>
+
+   <header class="header">
+
+      <div class="container header__top">
+        <!-- left: logo -->
+        <a class="brand" href="#">
+          <img class="brand__logo" src="assets/img/logo.webp" alt="Аннушка" />
+        </a>
+
+        <!-- center: socials -->
+        <div class="header__socials" aria-label="Соцсети">
+          <a class="ic" href="#" aria-label="Telegram">
+            <img src="assets/img/tg-header.svg" alt="tg" />
+          </a>
+          <a class="ic" href="#" aria-label="VK">
+            <img src="assets/img/vk-header.svg" alt="vk" />
+          </a>
+          <a class="ic" href="#" aria-label="WhatsApp">
+            <img src="assets/img/ws-header.svg" alt="ws" />
+          </a>
+        </div>
+
+        <div class="header__phone_wrapper">
+          <button class="bell" aria-label="Уведомления">
+            <img src="assets/img/bell-header.svg" alt="bell" />
+          </button>
+          <a class="header__phone" href="tel:+74952129354">
+            <img class="header__phone-ic" src="assets/img/phone-header.svg" alt="phone" />
+            <span>+7 (495) 212-93-54</span>
+          </a>
+        </div>
+
+        <div class="header__done">
+          <img class="header__done-ic" src="assets/img/check.svg" alt="check" />
+          <div class="header__done-text">
+            <div class="header__done-num" id="counter-number-head">1 028 987</div>
+            <div class="header__done-sub">выполненных заказов</div>
+          </div>
+        </div>
+
+        <div class="header-burger">
+          <img src="assets/img/menu-burger.svg" alt="burger" class="header-burger-opener"> 
+          <img src="assets/img/close-dropdown.svg" alt="burger" class="header-burger-close"> 
+        </div>
+
+      </div>
+
+      <div class="container header__bottom">
+        <nav class="nav" aria-label="Главное меню">
+          <div class="nav__link" data-menu="cleaning">Уборка</div>
+          <div class="nav__link">Окна</div>
+          <a class="nav__link" href="#">Химчистка</a>
+          <a class="nav__link" href="#">Юрлицам</a>
+          <a class="nav__link" href="#">Еще …</a>
+        </nav>
+
+        <a class="become" href="#">
+          <img class="become__ic" src="assets/img/user.svg" alt="user" />
+          <span>Стать исполнителем</span>
+        </a>
+
+        
+      </div>
+
+   
+      <div class="header_dropmenu" data-menu="cleaning">
+        <div class="container">
+          <div class="header__dropmenu-wrap">
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_dropmenu_col">
+              <ul class="header_dropmenu_col_list">
+                <li class="header_dropmenu_col_li header_dropmenu_col_li-parent">
+                  <a href="#">Услуги для квартир</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+                <li class="header_dropmenu_col_li">
+                  <a href="#">Уборка коттеджей</a>
+                </li>
+              </ul>
+            </div>
+            <div class="close-dropdown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path fill="#6A6A6A" fill-rule="evenodd" d="M15.697 1.766A1.033 1.033 0 0 0 14.57.08a1.03 1.03 0 0 0-.336.224L8 6.539 1.766.303A1.035 1.035 0 1 0 .303 1.766L6.539 8 .303 14.234a1.035 1.035 0 0 0 1.463 1.463L8 9.461l6.235 6.236a1.034 1.034 0 0 0 1.462-1.463L9.46 8l6.236-6.234Z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+
+    </header>
+
+      
+
+    <main>
+
+        <div class="mob-menu">
+            <div class="mob-menu-wrapper">
+                <nav class="mobile-nav" aria-label="Мобильное меню">
+                <div class="mobile-nav__list">
+
+                    <!-- Пункт с вложенностью -->
+                    <div class="mobile-nav__item">
+                    <button class="mobile-nav__toggle" type="button" aria-expanded="false">
+                        <span class="mobile-nav__title">Услуги для квартир</span>
+                        <span class="mobile-nav__icon" aria-hidden="true">
+                        <img src="assets/img/arrow-nav.svg" alt="arrow">
+                        </span>
+                    </button>
+
+                    <div class="mobile-nav__body">
+                        <div class="mobile-nav__content">
+                        <a href="#" class="mobile-nav__sublink">Поддерживающая уборка</a>
+                        <a href="#" class="mobile-nav__sublink">Генеральная уборка</a>
+                        <a href="#" class="mobile-nav__sublink">Мытье окон</a>
+                        <a href="#" class="mobile-nav__sublink">Химчистка мебели</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Пункт с вложенностью -->
+                    <div class="mobile-nav__item">
+                    <button class="mobile-nav__toggle" type="button" aria-expanded="false">
+                        <span class="mobile-nav__title">Услуги для офиса</span>
+                        <span class="mobile-nav__icon" aria-hidden="true">
+                        <img src="assets/img/arrow-nav.svg" alt="arrow">
+                        </span>
+                    </button>
+
+                    <div class="mobile-nav__body">
+                        <div class="mobile-nav__content">
+                        <a href="#" class="mobile-nav__sublink">Ежедневная уборка</a>
+                        <a href="#" class="mobile-nav__sublink">Уборка после ремонта</a>
+                        <a href="#" class="mobile-nav__sublink">Мытье фасадов</a>
+                        <a href="#" class="mobile-nav__sublink">Обслуживание офисов</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Пункт без вложенности: сразу ссылка -->
+                    <div class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">
+                        <span class="mobile-nav__title">Цены</span>
+                    </a>
+                    </div>
+
+                    <!-- Пункт без вложенности: сразу ссылка -->
+                    <div class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">
+                        <span class="mobile-nav__title">Контакты</span>
+                    </a>
+                    </div>
+
+                    <!-- Пункт с вложенностью -->
+                    <div class="mobile-nav__item">
+                    <button class="mobile-nav__toggle active" type="button" aria-expanded="true">
+                        <span class="mobile-nav__title">О нас</span>
+                        <span class="mobile-nav__icon" aria-hidden="true">
+                        <img src="assets/img/arrow-nav.svg" alt="arrow">
+                        </span>
+                    </button>
+
+                    <div class="mobile-nav__body" style="max-height: 500px;">
+                        <div class="mobile-nav__content">
+                        <a href="#" class="mobile-nav__sublink">Контакты</a>
+                        <a href="#" class="mobile-nav__sublink">О компании</a>
+                        <a href="#" class="mobile-nav__sublink">Отзывы</a>
+                        <a href="#" class="mobile-nav__sublink">Вакансии</a>
+                        <a href="#" class="mobile-nav__sublink">Блог</a>
+                        <a href="#" class="mobile-nav__sublink">Вопросы и ответы</a>
+                            <a href="#" class="mobile-nav__sublink">О компании</a>
+                        <a href="#" class="mobile-nav__sublink">Отзывы</a>
+                        <a href="#" class="mobile-nav__sublink">Вакансии</a>
+                        <a href="#" class="mobile-nav__sublink">Блог</a>
+                        <a href="#" class="mobile-nav__sublink">Вопросы и ответы</a>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                </nav>
+                
+                <div class="header__socials" aria-label="Соцсети">
+                <a class="ic" href="#" aria-label="Telegram">
+                    <img src="assets/img/tg-header.svg" alt="tg" />
+                </a>
+                <a class="ic" href="#" aria-label="VK">
+                    <img src="assets/img/vk-header.svg" alt="vk" />
+                </a>
+                <a class="ic" href="#" aria-label="WhatsApp">
+                    <img src="assets/img/ws-header.svg" alt="ws" />
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal contact -->
+        <div class="modal" id="contact-modal" aria-hidden="true">
+            <div class="modal__overlay" data-modal-close></div>
+
+            <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="myModalTitle">
+            <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
+                <img src="assets/img/close-modal.svg" alt="close">
+            </button>
+
+            <div class="modal-content-wrap">
+                <h2>Оформите заявку</h2>
+                <form class="modal-form">
+                <input class="modal__input" type="text" name="phone" placeholder="Фамилия и имя">
+                <input class="modal__input" type="tel" name="tel" placeholder="Номер телефона">
+                <input class="modal__input" type="email" name="email" placeholder="Электронная почта">
+
+                <label class="order__consent">
+                    <input class="order__check" type="checkbox" checked="">
+                    <span class="order__check-ui" aria-hidden="true"></span>
+                    <span class="order__consent-text">
+                    Даю согласие на <a href="#">обработку персональных данных</a>
+                    </span>
+                </label>
+                <button class="btn-def rounded" type="submit"><span>Отправить</span></button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <div class="fixed-connects">
+            <div class="fixed-connects-btn fixed-connects-btn-tg">
+            <a href="#">
+                <img src="assets/img/tg-round.svg" alt="tg">
+            </a>
+            </div>
+            <div class="fixed-connects-btn fixed-connects-btn-max">
+            <a href="#">
+                <img src="assets/img/max-round.webp" alt="max">
+            </a>
+            </div>
+            <div class="fixed-connects-btn fixed-connects-btn-wa">
+            <a href="#">
+                <img src="assets/img/wa-round.svg" alt="wa">
+            </a>
+            </div>
+        </div>
+
+        <div class="fixed-phone" data-modal-open="contact-modal">
+            <img src="assets/img/phone-fixed.svg" alt="phone">
+        </div>
+        
+        <!--Page filter-->
+        <div class="page-filter"></div>
+
+        <!-- FIRST SCREEN -->
+        <section class="bannerscreen become__banner">
+            <div class="container">
+                <div class="first__split">
+                    <!-- LEFT --> 
+                    <section class="first__left">
+                        <img src="assets/img/banner-dec-1.svg" alt="dec" class="banner-dec-1">
+                        <img src="assets/img/banner-dec-2.svg" alt="dec" class="banner-dec-2">
+                        <div class="first__left-inner">
+                            <h1 class="first__title">Станьте исполнителем <br> уборки с доходом <br> до 72 000 руб/мес</h1>
+                            <p class="first__sub">
+                                Чтобы начать, вам нужен паспорт, номер ИНН <br> или патент, банковская карта и смартфон
+                            </p>
+                            <button class="btn-def banner-btn become-btn-pc-banner" type="button" data-modal-open="contact-modal">
+                                <img class="btn__ic" src="assets/img/user-btn.svg" alt="user" />
+                                <span>Стать исполнителем</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- RIGHT -->
+                    <section class="first__right" aria-label="Фото">
+                        <div class="hero-img" style="background: url('assets/img/become-banner.webp') center/contain no-repeat;">
+
+                        </div>
+                    </section>
+                    <button class="btn-def banner-btn become-btn-mob-banner" type="button" data-modal-open="contact-modal">
+                        <img class="btn__ic" src="assets/img/user-btn.svg" alt="user" />
+                        <span>Стать исполнителем</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+      
+        <!-- Car -->
+        <section class="car section">
+            <div class="container">
+                <div class="car-wrap">
+                    <img src="assets/img/connect-dec-1.svg" alt="connect-dec" class="car-dec-1">
+                    <div class="car-text">
+                        <h2>Есть автомобиль? <br> <span>Доход до</span> 130 000 руб/мес</h2>
+                        <p>Текст<br>Текст</p>
+                    </div>
+                    <div class="car-bg" >
+                        <div class="car-bg-img" style="background: url('assets/img/car.webp') left/cover no-repeat;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <div class="become__about section">
+            <div class="container">
+                <div class="section-head-2">
+                    <h2 class="h2 center"><span>О сервисе уборки</span> «Аннушка»</h2>
+                    <p class="sub center">Мы сервис уборки «Аннушка» — площадка, где клиенты заказывают уборку, а исполнители эти заказы выполняют. Клиент получает услугу, вы получаете доход — всё очень просто! Мы самый крупный подобный сервис в России, с нами уже более 5 000 исполнителей!</p>
+                </div>
+                <div class="become__about-video-box" style="background: url('assets/img/vid-bg.webp') center/contain no-repeat;">
+                    <img src="assets/img/connect-dec-1.svg" alt="connect-dec" class="phonebox-dec-1">
+                    <img src="assets/img/connect-dec-1.svg" alt="connect-dec" class="phonebox-dec-2">
+                    <div class="become__about-video-box-play">
+                        <img src="assets/img/play-vid.svg" alt="play">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Etaps -->
+        <section class="etaps section">
+            <div class="container">
+            <div class="section-head-2">
+                <h2 class="h2 center"><span>Мы предлагаем</span></h2>
+            </div>
+            <div class="etaps-items">
+                <img src="assets/img/etaps-dec-1.webp" alt="etaps-dec" class="etaps-dec-1">
+                <div class="etap-item">
+                <img src="assets/img/etap1.svg" alt="etap">
+                <div class="etap-item-subtitle">Узнайте цену</div>
+                <div class="etap-item-text">
+                    Оплата ежедневно + 100% чаевые
+                </div>
+                </div>
+                <div class="etap-item">
+                <img src="assets/img/etap2.svg" alt="etap">
+                <div class="etap-item-subtitle">Приезд клинера</div>
+                <div class="etap-item-text">
+                    Вы пройдёте стажировку <br> с опытными клинерами Аннушки
+                </div>
+                </div>
+                <div class="etap-item">
+                <img src="assets/img/etap3.svg" alt="etap">
+                <div class="etap-item-subtitle">Уборка</div>
+                <div class="etap-item-text">
+                    Вы сами выбираете <br> рабочие дни
+                </div>
+                </div>
+                <div class="etap-item">
+                <img src="assets/img/etap4.svg" alt="etap">
+                <div class="etap-item-subtitle">Сдача работ и оплата</div>
+                <div class="etap-item-text">
+                    Ваш доход зависит <br> от вашего стажа работы
+                </div>
+                </div>
+            </div>
+            <div class="etaps-button-wrapper">
+                <a href="#">
+                <button class="btn-def etaps__btn gradi">
+                    <img src="assets/img/user-btn.svg" alt="calc">
+                    <span>Стать исполнителем</span>
+                </button>
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <section class="way section">
+            <div class="container">
+                <div class="section-head-2">
+                    <h2 class="h2 center"><span>Как стать</span> исполнителем</h2>
+                </div>
+                <div class="way-items">
+                    <div class="way-line-1"></div>
+                    <div class="way-line-2"></div>
+
+                    <div class="way-item">
+                        <div class="way-item-title">
+                            Укажите свой <br> телефон
+                        </div>
+                        <div class="way-item-text">
+                            Введите ваш личный номер в <a href="#">форме</a>, вам придет ссылка на приложение
+                        </div>
+                        <div class="way-item-num btn-def"><span>1</span></div>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-item-title">
+                            Заполните анкету <br> в приложении
+                        </div>
+                        <div class="way-item-text">
+                            Скачав приложение по ссылке, заполните короткую анкету.
+                        </div>
+                        <div class="way-item-num btn-def"><span>2</span></div>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-item-title">
+                            Пройдите <br> инструктаж
+                        </div>
+                        <div class="way-item-text">
+                            Посмотрите видео-обучение и проверьте знания с помощью теста.
+                        </div>
+                        <div class="way-item-num btn-def"><span>3</span></div>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-item-title">
+                            Пройдите <br> стажировку
+                        </div>
+                        <div class="way-item-text">
+                            Сходите на стажировку на три заказа. За каждый заказ вы уже будете получать деньги.
+                        </div>
+                        <div class="way-item-num btn-def"><span>4</span></div>
+                    </div>
+                    <div class="way-item">
+                        <div class="way-item-title">
+                            Вы в команде, <br> берите заказы !
+                        </div>
+                        <div class="way-item-text">
+                            Получайте заказы на уборку в приложении и зарабатывайте.
+                        </div>
+                        <div class="way-item-num btn-def"><span>5</span></div>
+                    </div>
+                </div>
+                <div class="way-btn-wrap">
+                    <button class="btn-def">
+                        <img src="assets/img/user-btn.svg" alt="calc">
+                        <span>Стать исполнителем</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="reviews section">
+            <div class="container">
+            <div class="section-head-2">
+                <h2 class="h2 center"><span>Отзывы сотрудников</span></h2>
+            </div>
+            <div class="reviews-items">
+                <img src="assets/img/rev-dec-1.svg" alt="rev-dec" class="rev-dec-1">
+                <img src="assets/img/rev-dec-2.svg" alt="rev-dec" class="rev-dec-2">
+                <img src="assets/img/rev-dec-3.svg" alt="rev-dec" class="rev-dec-3">
+
+                <div class="review-item">
+                <div class="review-item-head">
+                    <div class="review-item-head-title">
+                    <div class="review-item-head-grade">
+                        <img src="assets/img/green-star.svg" alt="star">
+                        <span>5.0</span>
+                    </div>
+                    <span class="review-item-head-name">Татьяна</span>
+                    </div>
+                    <div class="review-item-head-icon">
+                    <img src="assets/img/ya.svg" alt="head-icon">
+                    </div>
+                </div>
+                <div class="review-item-text">
+                    Большое спасибо команде Аннушка! Заказали генеральную уборку после ремонта. Результат превзошёл все ожидания! Квартира сияет, не осталось ни пылинки. Работали быстро, аккуратно, со своими средствами и инвентарём. Очень приятные и профессиональные мастера. Обязательно обратимся ещё
+                </div>
+                </div>
+                <div class="review-item">
+                <div class="review-item-head">
+                    <div class="review-item-head-title">
+                    <div class="review-item-head-grade">
+                        <img src="assets/img/green-star.svg" alt="star">
+                        <span>5.0</span>
+                    </div>
+                    <span class="review-item-head-name">Татьяна</span>
+                    </div>
+                    <div class="review-item-head-icon">
+                    <img src="assets/img/ya.svg" alt="head-icon">
+                    </div>
+                </div>
+                <div class="review-item-text">
+                    Большое спасибо команде Аннушка! Заказали генеральную уборку после ремонта. Результат превзошёл все ожидания! Квартира сияет, не осталось ни пылинки. Работали быстро, аккуратно, со своими средствами и инвентарём. Очень приятные и профессиональные мастера. Обязательно обратимся ещё
+                </div>
+                </div>
+                <div class="review-item">
+                <div class="review-item-head">
+                    <div class="review-item-head-title">
+                    <div class="review-item-head-grade">
+                        <img src="assets/img/green-star.svg" alt="star">
+                        <span>5.0</span>
+                    </div>
+                    <span class="review-item-head-name">Татьяна</span>
+                    </div>
+                    <div class="review-item-head-icon">
+                    <img src="assets/img/ya.svg" alt="head-icon">
+                    </div>
+                </div>
+                <div class="review-item-text">
+                    Большое спасибо команде Аннушка! Заказали генеральную уборку после ремонта. Результат превзошёл все ожидания! Квартира сияет, не осталось ни пылинки. Работали быстро, аккуратно, со своими средствами и инвентарём. Очень приятные и профессиональные мастера. Обязательно обратимся ещё
+                </div>
+                </div>
+                <div class="review-item">
+                <div class="review-item-head">
+                    <div class="review-item-head-title">
+                    <div class="review-item-head-grade">
+                        <img src="assets/img/green-star.svg" alt="star">
+                        <span>5.0</span>
+                    </div>
+                    <span class="review-item-head-name">Татьяна</span>
+                    </div>
+                    <div class="review-item-head-icon">
+                    <img src="assets/img/ya.svg" alt="head-icon">
+                    </div>
+                </div>
+                <div class="review-item-text">
+                    Большое спасибо команде Аннушка! Заказали генеральную уборку после ремонта. Результат превзошёл все ожидания! Квартира сияет, не осталось ни пылинки. Работали быстро, аккуратно, со своими средствами и инвентарём. Очень приятные и профессиональные мастера. Обязательно обратимся ещё
+                </div>
+                </div>
+                <div class="review-item">
+                <div class="review-item-head">
+                    <div class="review-item-head-title">
+                    <div class="review-item-head-grade">
+                        <img src="assets/img/green-star.svg" alt="star">
+                        <span>5.0</span>
+                    </div>
+                    <span class="review-item-head-name">Татьяна</span>
+                    </div>
+                    <div class="review-item-head-icon">
+                    <img src="assets/img/ya.svg" alt="head-icon">
+                    </div>
+                </div>
+                <div class="review-item-text">
+                    Большое спасибо команде Аннушка! Заказали генеральную уборку после ремонта. Результат превзошёл все ожидания! Квартира сияет, не осталось ни пылинки. Работали быстро, аккуратно, со своими средствами и инвентарём. Очень приятные и профессиональные мастера. Обязательно обратимся ещё
+                </div>
+                </div>
+                <div class="review-item">
+                <div class="review-item-head">
+                    <div class="review-item-head-title">
+                    <div class="review-item-head-grade">
+                        <img src="assets/img/green-star.svg" alt="star">
+                        <span>5.0</span>
+                    </div>
+                    <span class="review-item-head-name">Татьяна</span>
+                    </div>
+                    <div class="review-item-head-icon">
+                    <img src="assets/img/ya.svg" alt="head-icon">
+                    </div>
+                </div>
+                <div class="review-item-text">
+                    Большое спасибо команде Аннушка! Заказали генеральную уборку после ремонта. Результат превзошёл все ожидания! Квартира сияет, не осталось ни пылинки. Работали быстро, аккуратно, со своими средствами и инвентарём. Очень приятные и профессиональные мастера. Обязательно обратимся ещё
+                </div>
+                </div>
+            </div>
+            <div class="way-btn-wrap">
+                    <button class="btn-def">
+                        <img src="assets/img/user-btn.svg" alt="calc">
+                        <span>Стать исполнителем</span>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cifri section">
+            <div class="container">
+                <div class="section-head-2">
+                    <h2 class="h2 center"><span>«Аннушка»</span> в цифрах</h2>
+                </div>
+                <div class="cifri-items">
+                    <div class="cirfi-item">
+                        <img src="assets/img/cifri1.webp" alt="cifri">
+                        <div class="cifri-item-text">
+                            <div class="cifri-item-title">15 лет</div>
+                            <div class="cifri-item-subtitle">опыта работы</div>
+                        </div>
+                    </div>
+                    <div class="cirfi-item">
+                        <img src="assets/img/cifri2.webp" alt="cifri">
+                        <div class="cifri-item-text">
+                            <div class="cifri-item-title">4.7</div>
+                            <div class="cifri-item-subtitle">средняя оценка от клиентов</div>
+                        </div>
+                    </div>
+                    <div class="cirfi-item">
+                        <img src="assets/img/cifri3.webp" alt="cifri">
+                        <div class="cifri-item-text">
+                            <div class="cifri-item-title">105 700</div>
+                            <div class="cifri-item-subtitle">выполненных заказов</div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="cifri-btn-wrap">
+                    <button class="btn-def">
+                        <span>Побробнее о нас</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote section">
+            <div class="container">
+                <div class="quote-box">
+                    <img src="assets/img/mob-elips.svg" alt="elips" class="mob-elips">
+                    <img src="assets/img/connect-dec-1.svg" alt="connect-dec" class="phonebox-dec-1">
+                    <img src="assets/img/connect-dec-1.svg" alt="connect-dec" class="phonebox-dec-2">
+                    <img src="assets/img/quote-elips.svg" alt="elips" class="quote-elips">
+                    <div class="quote-img">
+                        <img src="assets/img/quote.svg" alt="quote">
+                        <div class="quote-img-mob-text">
+                            <div class="quote-img-mob-title">
+                                Иван Надобный
+                            </div>
+                            <div class="quote-img-mob-sub-title">
+                                Основатель клинингового сервиса "Аннушка"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-text-wrap">
+                        <div class="quote-text">
+                            Дорогие будущие сотрудники!
+                            <br><br>
+                            Спасибо, что вы заинтересовались компанией “Аннушка”! <br>
+                            Очень надеюсь, что скоро Вы станете частью нашей большой, дружной семьи! Наша компания всегда рада видеть в своих рядах новые лица - с горящими глазами, готовые двигаться вперед и сворачивать горы! Верю, что вместе с Вами мы сможем сделать этот мир лучше, добрее, и светлее при помощи наведения порядка и чистоты в домах, офисах и квартирах наших дорогих клиентов.
+                        </div>
+                        <div class="quote-text-bottom">
+                            Иван Надобный, <br>
+                            Основатель клинингового сервиса "Аннушка"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top-cols">
+          <div class="footer-col">
+            <div class="footer-col-title">Услуги жилих помещений</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Уборка коммерческих помещений</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Мойка окон и химчистка</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Дополнительные услуги</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Информация</div>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+            <a href="#">Уборка квартир</a>
+          </div>
+        </div>
+        <div class="footer-items">
+          <div class="footer-item">
+            <img src="assets/img/footer-logo.svg" alt="logo" class="footer-logo">
+            <div class="footer-cont-item">
+              <div class="footer-cont-item-title">Контакты клининговой компании "Аннушка"</div>
+              <span>г. Москва: Большой Каретный пер., 22, стр. 3</span>
+            </div>
+            <div class="footer-cont-item">
+              <div class="footer-cont-item-title">Режим работы:</div>
+              <span>с 8.00 до 23.00 <br>
+              Пн-Вс без выходных и праздников
+              </span>
+            </div>
+            <div class="footer-policy">
+              <a href="#">Политика конфиденциальности</a>
+              <p>Ⓒ “Аннушка” 2012-2026</p>
+            </div>
+          </div>
+          <div class="footer-item footer-item-mid">
+            <div class="footer-ya-wrap">
+              <div class="footer-mid-item-title">Рейтинг на Яндекс</div>
+              <img src="assets/img/footer-ya-review.svg" alt="ya" class="footer-ya-rev">
+            </div>
+            <div class="footer-pays">
+              <div div class="footer-mid-item-title">Способы оплаты</div>
+              <div class="footer-pays-items">
+                <img src="assets/img/mastercard.svg" alt="mastercard">
+                <img src="assets/img/sber.svg" alt="sber">
+                <img src="assets/img/wallet.svg" alt="wallet">
+              </div>
+            </div>
+            <div class="footer-codes">
+              <div class="footer-code-item">
+                ИНН:<span>7428937266200</span>
+              </div>
+              <div class="footer-code-item">
+                ОГРНИП:<span>398636629008</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-item">
+            <button class="btn-def footer-c-btn gradi">
+              <span>Заказать звонок</span>
+              </button>
+              <div class="footer-cont-item">
+                <div class="footer-cont-item-title">Связаться с нами</div>
+                <span>capitalclean@ya.ru (для документов)<br>
+                <a href="">+7 (495) 212-93-54</a>
+                </span>
+              </div>
+              <div class="header__socials" aria-label="Соцсети">
+                <a class="ic" href="#" aria-label="Telegram">
+                  <img src="assets/img/tg-header.svg" alt="tg">
+                </a>
+                <a class="ic" href="#" aria-label="VK">
+                  <img src="assets/img/vk-header.svg" alt="vk">
+                </a>
+                <a class="ic" href="#" aria-label="WhatsApp">
+                  <img src="assets/img/ws-header.svg" alt="ws">
+                </a>
+                <button class="btn-def footer-c-btn footer-c-btn-mob gradi">
+                  <span>Заказать звонок</span>
+                </button>
+              </div>
+          </div>
+          <div class="footer-item-mob">
+            <div class="footer-codes">
+              <div class="footer-code-item">
+                ИНН:<span>7428937266200</span>
+              </div>
+              <div class="footer-code-item">
+                ОГРНИП:<span>398636629008</span>
+              </div>
+            </div>
+            <div class="footer-policy">
+              <a href="#">Политика конфиденциальности</a>
+              <p>Ⓒ “Аннушка” 2012-2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/sliders.js"></script>
+  </body>
+</html>
